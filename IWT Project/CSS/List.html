@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(29, 42, 53);
+        color: #DDDD;
+
+    }
+
+    .horizontal-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .horizontal-navbar li {
+        float: left;
+    }
+
+    .horizontal-navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .horizontal-navbar li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .main-section {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: white;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+
+
+    .lists {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        color: white;
+
+    }
+
+    .main-section {
+        font-size: 20px;
+    }
+
+    .ordered-list {
+        font-size: 20px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+    }
+
+    .btn1 {
+        background-color: #04AA6D;
+        width: 100px;
+        height: 42px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid #04AA6D;
+        border-radius: 5px;
+        color: white;
+
+    }
+
+    .items {
+        width: 80%;
+        height: 500px;
+        border: 50px solid #38444d;
+
+    }
+
+    .example {
+        margin-top: 50px;
+    }
+
+    .i {
+        width: 80%;
+        height: 200px;
+        border: 50px solid #38444d;
+        margin-top: 50px;
+    }
+
+    /*Footer CSS*/
+    .img-contanier2 {
+        background-image: url("https://www.w3schools.com/images/lynx_landing.png"), url("https://www.w3schools.com/images/background_in_space.gif");
+        background-repeat: no-repeat, repeat;
+        background-position: 90% 52%, center center
+            /*left top;; */
+        ;
+        padding-top: 70px;
+        padding-bottom: 220px;
+        height: auto;
+    }
+
+    .heading4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        padding-left: 100px;
+        margin: 0px 0px 0px 15%;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a class="active" href="../css/index.html">CSS</a></li>
+            <li><a href="#">About A1</a></li>
+            <li><a href="../about2.html">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2>CSS Tutorial</h2>
+        <a href="../CSS/index.html">CSS HOME</a>
+        <a href="../CSS/#">CSS Introduction</a>
+        <a href="../CSS/#">CSS Syntax</a>
+        <a href="../CSS/Selector.html">CSS Selectors</a>
+        <a href="../CSS/How to.html">CSS How To</a>
+        <a href="../CSS/Comments.html">CSS Comments</a>
+        <a href="../CSS/Colors.html">CSS Colors</a>
+        <a href="../CSS/#">CSS Backgrounds</a>
+        <a href="../CSS/#">CSS Borders</a>
+        <a href="../CSS/Margins.html">CSS Margins</a>
+        <a href="../CSS/Padding.html">CSS Padding</a>
+        <a href="../CSS/Height-Width.html">CSS Height/Width</a>
+        <a href="../CSS/Box-Model.html">CSS Box Model</a>
+        <a href="../CSS/Outline.html">CSS Outline</a>
+        <a href="../CSS/Text.html">CSS Text</a>
+        <a href="../CSS/#">CSS Fonts</a>
+        <a href="../CSS/Icons.html">CSS Icons</a>
+        <a href="../CSS/Links.html">CSS Link</a>
+        <a href="../CSS/List.html" class="active">CSS List</a>
+        <a href="../CSS/Table.html">CSS Table</a>
+        <a href="../CSS/Display.html">CSS Display</a>
+        <a href="../CSS/css-maxwidth.html">CSS Max-Width</a>
+        <a href="../CSS/Positioning.html">CSS positioning</a>
+        <a href="../CSS/z-index.html">CSS z-index</a>
+        <a href="../CSS/#">CSS Overflow</a>
+        <a href="../CSS/Float.html">CSS Flaot</a>
+        <a href="../CSS/Inline-Block.html">CSS inline-block</a>
+        <a href="../CSS/Layout.html">CSS Aling</a>
+        <a href="../CSS/Forms.html">CSS Forms</a>
+        <a href="../CSS/Dropdown.html">CSS Dropdown</a>
+        <a href="../CSS/Attribute Selector.html">CSS attribute Selectors</a>
+        <a href="../CSS/Units.html">CSS Units</a>
+        <a href="../CSS/#">CSS Psuedo class</a>
+        <br /><br /><br /><br />
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section">
+        <!-- Do the changes in the main-section -->
+        <h1>CSS Lists</h1>
+        <div class="btn">
+            <button class="btn1">Previous</button>
+            <button class="btn1">Next</button>
+        </div>
+
+        <hr>
+
+        <div class="lists">
+            <div class="unordered">
+                <h3>Unordered Lists</h3>
+                <ul>
+                    <li style="list-style-type: circle">Coffee</li>
+                    <li style="list-style-type: circle">Tea</li>
+                    <li style="list-style-type: circle">Coca Cola</li>
+                </ul>
+                <ul>
+                    <li style="list-style-type: square;">Coffee</li>
+                    <li style="list-style-type: square;">Tea</li>
+                    <li style="list-style-type: square;">Coca Cola</li>
+                </ul>
+            </div>
+            <div class="ordered-list">
+                <h3>Ordered Lists</h3>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ol>
+                <ol>
+                    <li style="list-style-type: upper-roman;">Coffee</li>
+                    <li style="list-style-type: upper-roman;">Tea</li>
+                    <li style="list-style-type: upper-roman;">Coca Cola</li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <div class="properties">
+            <h2>HTML Lists and CSS List Properties</h2>
+            <p>In HTML, there are two main types of lists:
+                <li> lists (ul) - the list items are marked with bullets</li>
+                <li>ordered lists (ol) - the list items are marked with numbers or letters</li>
+            </p>
+        </div>
+        <div class="css-properties">
+            <p>The CSS list properties allow you to:</p>
+            <li>Set different list item markers for ordered lists</li>
+            <li>Set different list item markers for unordered lists</li>
+            <li>Set an image as the list item marker</li>
+            <li>Add background colors to lists and list items</li>
+        </div>
+        <hr>
+        <div>
+            <h2>Different List Item Markers</h2>
+            <p>The list-style-type property specifies the type of list item marker.</p>
+            <p> following example shows some of the available list item markers:</p>
+            <div class="items">
+                <h3>Example</h3>
+                <div>
+                    <span style="color:rgb(149, 149, 149)">
+                        ul.a
+                        <span style="color:black">
+                            {</span><span style="color:rgb(149, 149, 149)">
+                            <br>&nbsp;&nbsp;list-style-type<span style="color:rgb(167, 167, 255)">
+                                <span style="color:black">:</span>circle<span style="color:black">;
+                                </span></span><br></span>
+                        <span style="color:black">}
+                        </span><br><br>ul.b<span style="color:black">
+                            {</span><span style="color:rgb(149, 149, 149)">
+                            <br>&nbsp; list-style-type<span style="color:rgb(167, 167, 255)">
+                                <span style="color:black">:</span> square<span style="color:black">;
+                                </span></span><br></span><span style="color:black">}</span>
+                        <br><br>ol.c
+                        <span style="color:black">
+                            {</span><span style="color:rgb(149, 149, 149)">
+                            <br>&nbsp; list-style-type<span style="color:rgb(167, 167, 255)">
+                                <span style="color:black">:</span> upper-roman<span style="color:black">;
+                                </span></span><br></span><span style="color:black">}</span><br>
+                        <br>ol.d <span style="color:black">
+                            {</span><span style="color:rgb(149, 149, 149)"><br>&nbsp; list-style-type<span
+                                style="color:rgb(167, 167, 255)">
+                                <span style="color:black">:</span> lower-alpha<span style="color:black">;
+                                </span></span><br></span><span style="color:black">}</span></span>
+                </div>
+            </div>
+            <p>Note: Some of the values are for unordered lists, and some for ordered lists.</p>
+            <hr>
+            <div class="image">
+                <h1>An Image as The List Item Marker</h1>
+                <p>The list-style-image property specifies an image as the list item marker:</p>
+                <div class="i">
+                    <h3>Example</h3>
+                    <div><span style="color:rgb(149, 149, 149)">
+                            ul
+                            <span style="color:black">
+                                {</span><span style="color:rgb(149, 149, 149)"><br>&nbsp;
+                                list-style-image<span>
+                                    <span style="color:rgb(167, 167, 255)">:url('sqpurple.gif')</span><span
+                                        style="color:black">;</span></span><br>
+                            </span><span style="color:black">}</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2>Position The List Item Markers</h2>
+        <p>The list-style-position property specifies the position of the list-item markers (bullet points).
+
+            "list-style-position: outside;" means that the bullet points will be outside the list item.
+            The start of each line of a list item will be aligned vertically. This is default:</p>
+        <ul>
+            <li style="list-style-type: disc;;">Coffee - A brewed drink prepared from roasted coffee beans...</li>
+            <li style="list-style-type: disc;">Tea</li>
+            <li style="list-style-type: disc;">Coca Cola</li>
+        </ul>
+        <p>"list-style-position: inside;" means that the bullet points will be inside the list item.
+            As it is part of the list item, it will be part of the text and push the text at the start:</p>
+        <ul>
+            <li style="list-style-type: disc;;">Coffee - A brewed drink prepared from roasted coffee beans...</li>
+            <li style="list-style-type: disc;">Tea</li>
+            <li style="list-style-type: disc;">Coca Cola</li>
+        </ul>
+        <div class="i">
+            <h3>Example</h3>
+            <div><span style="color:rgb(149, 149, 149)">
+                    ul
+                    <span style="color:black">
+                        {</span><span style="color:rgb(149, 149, 149)"><br>&nbsp;
+                        list-style-image<span>
+                            <span style="color:rgb(167, 167, 255)">:url('sqpurple.gif')</span><span
+                                style="color:black">;</span></span><br>
+                    </span><span style="color:black">}</span></span>
+            </div>
+        </div>
+        <hr>
+        <div class="remove">
+            <h3>Remove Default Settings</h3>
+            <p>The list-style-type:none property can also be used to remove the markers/bullets.
+                Note that the list also has default margin and padding.
+                To remove this, add margin:0 and padding:0 to (ul) or (ol):
+            </p>
+            <div class="i">
+                <h3>Example</h3>
+                <div><span style="color:rgb(149, 149, 149)">
+                        ul
+                        <span style="color:black">
+                            {</span><span style="color:rgb(149, 149, 149)"><br>&nbsp;
+                            list-style-image<span>
+                                <span style="color:rgb(167, 167, 255)">:url('sqpurple.gif')</span><span
+                                    style="color:black">;</span></span><br>
+                        </span><span style="color:black">}</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>When using the shorthand property, the order of the property values are:</p>
+        <li>list-style-type (if a list-style-image is specified, the value of this property will be displayed if the
+            image for some reason cannot be displayed)</li>
+        <li>list-style-position (specifies whether the list-item markers should appear inside or outside the content
+            flow)</li>
+        <li>list-style-image (specifies an image as the list item marker)</li>
+        <p>If one of the property values above is missing, the default value for the missing property will be inserted,
+            if any.</p>
+        <hr>
+        <h2>All CSS List Properties</h2>
+        <table border="1px">
+            <tbody>
+                <tr>
+                    <th style="width:30%">Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/cssref/pr_list-style.php">list-style</a></td>
+                    <td>Sets all the properties for a list in one declaration</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/cssref/pr_list-style-image.php">list-style-image</a></td>
+                    <td>Specifies an image as the list-item marker</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/cssref/pr_list-style-position.php">list-style-position</a>
+                    </td>
+                    <td>Specifies the position of the list-item markers (bullet points)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/cssref/pr_list-style-type.php">list-style-type</a></td>
+                    <td>Specifies the type of list-item marker</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <!-- Content Section Ends -->
+    <!-- Footer Started -->
+    <footer>
+        <div class="img-contanier2">
+            <div>
+                <br><br>
+                <h4 class="heading4">© Created By Arya Arora Dash</h4>
+                <p class="heading4" style="font-size: 20px;">Group : A2</p>
+                <p class="heading4" style="font-size: 20px;">SIC : </p>
+                <p class="heading4" style="font-size: 20px;">Roll No. : 21</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ended -->
+</body>
+
+</html>

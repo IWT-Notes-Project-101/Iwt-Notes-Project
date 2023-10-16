@@ -1,0 +1,558 @@
+<!--Ankit Kumar Sahu-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The position Property</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: rgb(29, 42, 53);
+        font-family: Verdana, sans-serif;
+    }
+
+    .horizontal-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .horizontal-navbar li {
+        float: left;
+    }
+
+    .horizontal-navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .horizontal-navbar li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .position {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: 100vh;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    .side-nav h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #cbc8c3;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+
+    .position {
+        width: 70%;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        line-height: 1.7rem;
+        border-right: 1px solid #38444d;
+        height: auto;
+    }
+
+    #topHeading {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: normal;
+    }
+
+    .subText {
+        font-size: 1.2rem;
+    }
+
+    .buttonGroup {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #button {
+        padding: 1.5vh 2vw;
+        background: #04AA6D;
+        font-weight: bold;
+        color: white;
+        font-size: 1.125rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        border: none;
+    }
+
+    #button:hover {
+        background-color: #027c50;
+    }
+
+    #property {
+        background: rgba(222, 222, 222, 0.1);
+        color: #ff9999;
+        padding: 0.5vh 0.5vw;
+    }
+
+    #heading {
+        font-size: 2.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ddd;
+        font-weight: bold;
+    }
+
+    .postion-values li {
+        padding: 0.6vh 0;
+        font-size: 1.3rem;
+    }
+
+    .mainContent hr {
+        border: 1px solid #38444d;
+    }
+
+    .mainContent {
+        margin: 5vh 0;
+    }
+
+    .textPosition {
+        border: 2px solid #04AA6D;
+        line-height: normal;
+        margin: 4vh 0;
+    }
+
+    .textPosition p {
+        margin: 0;
+    }
+
+    .code {
+        background-color: rgb(21, 32, 43);
+        padding: 1vh 2vw;
+        margin: 2vh 0;
+    }
+
+    .codeSnippet {
+        background-color: #38444d;
+        padding: 1vh 2vw;
+        border-radius: 0.5rem;
+        line-height: 0.7rem;
+    }
+
+    .codeSnippet h2 {
+        font-weight: normal;
+        padding-bottom: 2vh;
+    }
+
+    #cssproperty {
+        color: #c5a5c5;
+    }
+
+    #propertyValue {
+        color: #88c999;
+    }
+
+    #selectorTag {
+        color: #ff9999;
+    }
+
+    .relativeText {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+    }
+
+    .absoluteText {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+
+    .stickyBox {
+        height: 150px;
+        width: 100%;
+        overflow: auto;
+        margin: 5vh 0;
+        background-color: #fff;
+        color: black;
+        padding: 1vh 1vw;
+    }
+
+    #sticky {
+        max-width: 100%;
+        border: 2px solid #4CAF50;
+        background-color: #cae8ca;
+        padding: 0.3rem;
+        position: sticky;
+        top: 0;
+    }
+
+    .note {
+        background-color: #FFF4A3;
+        max-width: 100%;
+        position: relative;
+        margin: 1.5rem 0;
+        padding: 1rem 2rem;
+        color: #111;
+    }
+
+    /*Footer CSS*/
+    .img-contanier2 {
+        background-image: url("https://www.w3schools.com/images/lynx_landing.png"), url("https://www.w3schools.com/images/background_in_space.gif");
+        background-repeat: no-repeat, repeat;
+        background-position: 90% 52%, center center
+            /*left top;; */
+        ;
+        padding-top: 70px;
+        padding-bottom: 220px;
+        height: auto;
+    }
+
+    .heading4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        padding-left: 100px;
+        margin: 0px 0px 0px 15%;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a class="active" href="../css/index.html">CSS</a></li>
+            <li><a href="#">About A1</a></li>
+            <li><a href="../about2.html">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2>CSS Tutorial</h2>
+        <a href="../CSS/index.html">CSS HOME</a>
+        <a href="../CSS/#">CSS Introduction</a>
+        <a href="../CSS/#">CSS Syntax</a>
+        <a href="../CSS/Selector.html">CSS Selectors</a>
+        <a href="../CSS/How to.html">CSS How To</a>
+        <a href="../CSS/Comments.html">CSS Comments</a>
+        <a href="../CSS/Colors.html">CSS Colors</a>
+        <a href="../CSS/#">CSS Backgrounds</a>
+        <a href="../CSS/#">CSS Borders</a>
+        <a href="../CSS/Margins.html">CSS Margins</a>
+        <a href="../CSS/Padding.html">CSS Padding</a>
+        <a href="../CSS/Height-Width.html">CSS Height/Width</a>
+        <a href="../CSS/Box-Model.html">CSS Box Model</a>
+        <a href="../CSS/Outline.html">CSS Outline</a>
+        <a href="../CSS/Text.html">CSS Text</a>
+        <a href="../CSS/#">CSS Fonts</a>
+        <a href="../CSS/Icons.html">CSS Icons</a>
+        <a href="../CSS/Links.html">CSS Link</a>
+        <a href="../CSS/List.html">CSS List</a>
+        <a href="../CSS/Table.html">CSS Table</a>
+        <a href="../CSS/Display.html">CSS Display</a>
+        <a href="../CSS/css-maxwidth.html">CSS Max-Width</a>
+        <a href="../CSS/Positioning.html"class="active">CSS positioning</a>
+        <a href="../CSS/z-index.html">CSS z-index</a>
+        <a href="../CSS/#">CSS Overflow</a>
+        <a href="../CSS/Float.html">CSS Flaot</a>
+        <a href="../CSS/Inline-Block.html" >CSS inline-block</a>
+        <a href="../CSS/Layout.html">CSS Aling</a>
+        <a href="../CSS/Forms.html">CSS Forms</a>
+        <a href="../CSS/Dropdown.html">CSS Dropdown</a>
+        <a href="../CSS/Attribute Selector.html">CSS attribute Selectors</a>
+        <a href="../CSS/Units.html">CSS Units</a>
+        <a href="../CSS/#">CSS Psuedo class</a>
+        <br /><br /><br /><br />
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="position">
+        <div class="mainContent">
+            <div class="heading">
+                <h1 id="topHeading">CSS Layout - The position Property</h1>
+                <div class="buttonGroup">
+                    <button id="button">&lt; Previous</button>
+                    <button id="button"> Next &gt; </button>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p class="subText">The <span id="property">position</span>
+                    </span> property specifies the type of positioning
+                    method used for an element (static, relative, fixed, absolute or sticky).</p>
+            </div>
+            <hr>
+            <div class="positionProperty">
+                <p id="heading">The <span id="property">position</span> Property</p>
+                <p class="subText">The position property specifies the type of positioning method used for an element.
+                </p>
+                <p class="subText">There are five different position values:</p>
+                <ul class="postion-values">
+                    <li><span id="property">static</span></li>
+                    <li><span id="property">relative</span></li>
+                    <li><span id="property">fixed</span></li>
+                    <li><span id="property">absolute</span></li>
+                    <li><span id="property">sticky</span></li>
+                </ul>
+                <p class="subText">Elements are then positioned using the top, bottom, left, and right properties.
+                    However, these properties will not work unless the <span id="property">position</span> property is
+                    set first. They also work differently depending on the position value.</p>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">position: static;</p>
+                <p class="subText">HTML elements are positioned static by default.</p>
+                <p class="subText">Static positioned elements are not affected by the top, bottom, left, and right
+                    properties.</p>
+                <p class="subText">An element with <span id="property">position: static;</span> is not positioned in any
+                    special way; it is always positioned according to the normal flow of the page:</p>
+                <div class="textPosition">
+                    <p class="subText">This 'div' element has position: static;</p>
+                </div>
+                <p class="subText">Here is the CSS that is used:</p>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code">
+                        <p id="selectorTag">div.static {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">static;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">3px
+                                solid #73AD21;</span></p>
+                        <p id="selectorTag">}</p>
+                    </div>
+                    <button id="button"> Try it Yourself &gt;&gt; </button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">position: relative;</p>
+                <p class="subText">An element with <span id="property">position: relative;</span> is positioned relative
+                    to its normal position.</p>
+                <p class="subText">Setting the top, right, bottom, and left properties of a relatively-positioned
+                    element will cause it to be adjusted away from its normal position. Other content will not be
+                    adjusted to fit into any gap left by the element.</p>
+                <div class="textPosition" style="left: 30px; position: relative;">
+                    <p class="subText">This &lt; div &gt; element has position: relative;</p>
+                </div>
+                <p class="subText">Here is the CSS that is used:</p>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code">
+                        <p id="selectorTag">div.relative {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">relative;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">left: </span><span
+                                id="propertyValue">30px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">3px
+                                solid #73AD21;</span></p>
+                        <p id="selectorTag">}</p>
+                    </div>
+                    <button id="button"> Try it Yourself &gt;&gt; </button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">position: fixed;</p>
+                <p class="subText">An element with <span id="property">position: fixed;</span> is positioned relative to
+                    the viewport, which means it always stays in the same place even if the page is scrolled. The top,
+                    right, bottom, and left properties are used to position the element.</p>
+                <p class="subText">A fixed element does not leave a gap in the page where it would normally have been
+                    located.</p>
+                <p class="subText">Notice the fixed element in the lower-right corner of the page. Here is the CSS that
+                    is used:</p>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code">
+                        <p id="selectorTag">div.fixed {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">fixed;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">bottom: </span><span
+                                id="propertyValue">0;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">right: </span><span
+                                id="propertyValue">0;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">width: </span><span
+                                id="propertyValue">300px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">3px
+                                solid #73AD21;</span></p>
+                        <p id="selectorTag">}</p>
+                    </div>
+                    <button id="button"> Try it Yourself &gt;&gt; </button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">position: absolute;</p>
+                <p class="subText">An element with <span id="property">position: absolute;</span> is positioned relative
+                    to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+                <p class="subText">However; if an absolute positioned element has no positioned ancestors, it uses the
+                    document body, and moves along with page scrolling.</p>
+                <p class="subText"><span style="font-weight: bold;">Note -: </span>Absolute positioned elements are
+                    removed from the normal flow, and can overlap elements.</p>
+                <p class="subText">Here is a simple example:</p>
+                <div class="relative">
+                    <p class="relativeText">This &lt;div&gt; element has position: relative;</p>
+                </div>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code">
+                        <p id="selectorTag">div.relative {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">relative;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">width: </span><span
+                                id="propertyValue">400px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">height: </span><span
+                                id="propertyValue">200px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">3px
+                                solid #73AD21;</span></p>
+                        <p id="selectorTag">}</p>
+                        <p id="selectorTag">div.absolute {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">absolute;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">top: </span><span
+                                id="propertyValue">80px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">right: </span><span
+                                id="propertyValue">0;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">width: </span><span
+                                id="propertyValue">200px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">height: </span><span
+                                id="propertyValue">100px;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">3px
+                                solid #73AD21;</span></p>
+                        <p id="selectorTag">}</p>
+                    </div>
+                    <button id="button"> Try it Yourself &gt;&gt; </button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">position: sticky;</p>
+                <p class="subText">An element with <span id="property">position: sticky;</span> is positioned based on
+                    the user's scroll position.</p>
+                <p class="subText">A sticky element toggles between <span id="property">relative</span> and <span
+                        id="property">fixed</span>, depending on the scroll position. It is positioned relative until a
+                    given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+                <div class="stickyBox">
+                    <h5>Try to scroll inside this frame to understand how sticky positioning works.</h5>
+                    <p id="sticky">I am sticky!</p>
+                    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
+                        fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
+                        fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
+                        fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                </div>
+                <div class="note">
+                    <p><span style="font-weight: bold;">Note:</span> Internet Explorer does not support sticky
+                        positioning. Safari requires a -webkit- prefix (see example below). You must also specify at
+                        least one of <span style="color: crimson;">top</span>, <span
+                            style="color: crimson;">right</span>, <span style="color: crimson;">bottom</span> or <span
+                            style="color: crimson;">left</span> for sticky positioning to work.</p>
+                </div>
+                <p style="padding: 0 2rem;">In this example, the sticky element sticks to the top of the page (top: 0),
+                    when you reach its scroll position. </p>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code">
+                        <p id="selectorTag">div.fixed {</p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">-webkit-sticky;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">position: </span><span
+                                id="propertyValue">sticky;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">top: </span><span
+                                id="propertyValue">0;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">background-color: </span><span
+                                id="propertyValue">green;</span></p>
+                        <p style="padding: 0 2rem;"><span id="cssproperty">border: </span><span id="propertyValue">2px
+                                solid #4CAF50;</span></p>
+                        <p id="selectorTag">}</p>
+                    </div>
+                    <button id="button"> Try it Yourself &gt;&gt; </button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">Positioning Text In an Image</p>
+                <p class="subText">How to position text over an image:</p>
+                <div class="codeSnippet">
+                    <h2>Example</h2>
+                    <div class="code" style="position: relative; text-align: center;">
+                        <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt=""
+                            style="width:100%; opacity:0.3">
+                        <p style="position: absolute; top: 0.5rem; left: 1rem;">Top Left</p>
+                        <p style="position: absolute; top: 0.5rem; right: 1rem;">Top Right</p>
+                        <p style="position: absolute; bottom: 0.5rem; left: 1rem;">Bottom Left</p>
+                        <p style="position: absolute; bottom: 0.5rem; right: 1rem;">Bottom Right</p>
+                        <p style="position: absolute; top: 50%; left: 50%;">Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Section Ends -->
+    <!-- Footer Started -->
+    <footer>
+        <div class="img-contanier2">
+            <div>
+                <br><br>
+                <h4 class="heading4">© Created By Ankit Kumar Sahu</h4>
+                <p class="heading4" style="font-size: 20px;">Group : A2</p>
+                <p class="heading4" style="font-size: 20px;">SIC : </p>
+                <p class="heading4" style="font-size: 20px;">Roll No. : 25</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ended -->
+</body>
+
+</html>
