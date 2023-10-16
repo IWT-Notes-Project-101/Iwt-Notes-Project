@@ -1,0 +1,458 @@
+<!-- Aman  Prakash Srivastava, CST-A2,SIC-21BCTB97 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(29, 42, 53);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .main-section {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #cbc8c3;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+
+    .button {
+        display: inline-block;
+        margin-right: 500px;
+    }
+
+    .button button {
+        color: white;
+        background-color: #04AA6D;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .background {
+        color: white
+    }
+
+    .rectangle {
+        width: 1200px;
+        /* Set the width of the rectangle */
+        height: 100px;
+        /* Set the height of the rectangle */
+        border: 44px solid rgb(125, 122, 122);
+        /* Add a gray border that is twice the thickness of the rectangle */
+        text-align: center;
+        line-height: 100px;
+        /* Vertically center the text within the rectangle */
+        background-color: white;
+    }
+
+    .rectangle1 {
+        width: 1200px;
+        /* Set the width of the rectangle */
+        height: 580px;
+        /* Set the height of the rectangle */
+        border: 44px solid rgb(125, 122, 122);
+        /* Add a gray border that is twice the thickness of the rectangle */
+        text-align: center;
+        line-height: 100px;
+        /* Vertically center the text within the rectangle */
+        background-color: white;
+    }
+
+    .large-rectangle {
+
+        height: 100px;
+        width: 1000px;
+        background-color: tomato;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+    }
+
+    .faderec {
+        line-height: 100px;
+        color: white;
+        text-align: center;
+        height: 100px;
+    }
+
+    .textcolors {
+        color: #cbc8c3;
+    }
+
+    /*Footer CSS*/
+    .img-contanier2 {
+        background-image: url("https://www.w3schools.com/images/lynx_landing.png"), url("https://www.w3schools.com/images/background_in_space.gif");
+        background-repeat: no-repeat, repeat;
+        background-position: 90% 52%, center center
+            /*left top;; */
+        ;
+        padding-top: 70px;
+        padding-bottom: 220px;
+        height: auto;
+    }
+
+    .heading4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        padding-left: 100px;
+        margin: 0px 0px 0px 15%;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a class="active" href="../css/index.html">CSS</a></li>
+            <li><a href="#">About A1</a></li>
+            <li><a href="../about2.html">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2>CSS Tutorial</h2>
+        <a href="../CSS/index.html">CSS HOME</a>
+        <a href="../CSS/#">CSS Introduction</a>
+        <a href="../CSS/#">CSS Syntax</a>
+        <a href="../CSS/Selector.html">CSS Selectors</a>
+        <a href="../CSS/How to.html">CSS How To</a>
+        <a href="../CSS/Comments.html">CSS Comments</a>
+        <a href="../CSS/Colors.html" class="active">CSS Colors</a>
+        <a href="../CSS/#">CSS Backgrounds</a>
+        <a href="../CSS/#">CSS Borders</a>
+        <a href="../CSS/Margins.html">CSS Margins</a>
+        <a href="../CSS/Padding.html">CSS Padding</a>
+        <a href="../CSS/Height-Width.html">CSS Height/Width</a>
+        <a href="../CSS/Box-Model.html">CSS Box Model</a>
+        <a href="../CSS/Outline.html">CSS Outline</a>
+        <a href="../CSS/Text.html">CSS Text</a>
+        <a href="../CSS/#">CSS Fonts</a>
+        <a href="../CSS/Icons.html">CSS Icons</a>
+        <a href="../CSS/Links.html">CSS Link</a>
+        <a href="../CSS/List.html">CSS List</a>
+        <a href="../CSS/Table.html">CSS Table</a>
+        <a href="../CSS/Display.html">CSS Display</a>
+        <a href="../CSS/css-maxwidth.html">CSS Max-Width</a>
+        <a href="../CSS/Positioning.html">CSS positioning</a>
+        <a href="../CSS/z-index.html">CSS z-index</a>
+        <a href="../CSS/#">CSS Overflow</a>
+        <a href="../CSS/Float.html">CSS Flaot</a>
+        <a href="../CSS/Inline-Block.html">CSS inline-block</a>
+        <a href="../CSS/Layout.html">CSS Aling</a>
+        <a href="../CSS/Forms.html">CSS Forms</a>
+        <a href="../CSS/Dropdown.html">CSS Dropdown</a>
+        <a href="../CSS/Attribute Selector.html">CSS attribute Selectors</a>
+        <a href="../CSS/Units.html">CSS Units</a>
+        <a href="../CSS/#">CSS Psuedo class</a>
+        <br /><br /><br /><br />
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section">
+        <!-- Do the changes in the main-section -->
+
+        <h2>CSS Colors</h2>
+
+        <div class="button">
+            <button type="button">Previous</button>
+        </div>
+        <div class="button">
+            <button type="button">Next</button>
+        </div>
+        <hr>
+        <h4 style="color: #cbc8c3;">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA
+            values.</h4>
+        <hr>
+        <h2 style="color: #cbc8c3;">CSS Color Names</h2>
+        <h3 style="color: #cbc8c3;">In CSS, a color can be specified by using a predefined color name:</h3>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:Tomato;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">Tomato</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:Orange;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">Orange</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:DodgerBlue;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">DodgerBlue</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:MediumSeaGreen;stroke-width:3" /><text fill="#ffffff"
+                font-size="25" font-family="Verdana" x="65" y="86">MediumSeaGreen</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:grey;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">Grey</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:SlateBlue;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">SlateBlue</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:violet;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">Violet</text>
+        </svg>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:LightGray;stroke-width:3" /><text fill="#ffffff" font-size="25"
+                font-family="Verdana" x="65" y="86">LightGray</text>
+        </svg>
+        <br>
+        <div class="button">
+            <button type="button">Try it Yourself >></button>
+        </div>
+        <h3 style="color: #cbc8c3;">CSS/HTML support 140 <a
+                href="https://www.w3schools.com/colors/colors_names.asp">standard color names </a></h3>
+        <hr>
+        <h2 style="color: #cbc8c3;">CSS Background Color</h2>
+        <h4 style="color: #cbc8c3;">You can set the background color for HTML elements:</h4>
+        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+        <p style="background-color:Tomato;">Lorem ipsumdolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+        <div class="rectangle" style="border-left: 15px solid green; padding-left: 10px;">
+            <span style="color:brown"><span style="color:red">&lt;h1</span> <span style="color:blue">style</span><span
+                    style="color:red">="background-color:DodgerBlue;"</span>><span style="color:blue">Hello
+                    World</span><span style="color:red">&lt;/h1&gt;</span></span>
+            <span style="color:brown"><span style="color:red">&lt;p</span> <span style="color:blue">style</span><span
+                    style="color:red">="background-color:Tomato;"</span>><span style="color:blue">Lorem
+                    ipsum...</span><span style="color:red">&lt;/p&gt;</span></span>
+
+        </div>
+
+
+
+
+
+
+        <div class="button">
+            <button type="button">Try it Yourself >></button>
+        </div>
+
+        <h2 style="color: #cbc8c3;">CSS Text Color</h2>
+        <h3 style="color: #cbc8c3;">You can set color for the text</h3>
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+        <div class="rectangle" style="border-left: 15px solid green; padding-left: 10px;">
+            <span style="color:brown"><span style="color:red">&lt;h1</span> <span style="color:blue">style</span><span
+                    style="color:red">="border:2px solid Tomato;"</span>><span style="color:blue">Hello
+                    World</span><span style="color:red">&lt;/h1&gt;</span></span>
+            <span style="color:brown"><span style="color:red">&lt;h1</span> <span style="color:blue">style</span><span
+                    style="color:red">="border:2px solid DodgerBlue;"</span>><span style="color:blue">Hello
+                    World</span><span style="color:red">&lt;/h1&gt;</span></span>
+            <span style="color:brown"><span style="color:red">&lt;h1</span> <span style="color:blue">style</span><span
+                    style="color:red">="border:2px solid Violet;"</span>><span style="color:blue">Hello
+                    World</span><span style="color:red">&lt;/h1&gt;</span></span>
+
+        </div>
+        <div class="button">
+            <button type="button">Try it Yourself >></button>
+        </div>
+
+        <h2 style="color: #cbc8c3;">CSS Border Color</h2>
+        <h3 style="color: #cbc8c3;">You can set the color of borders:</h3>
+        <h1 style="border:2px solid Tomato">Hello World</h1>
+        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+        <h1 style="border:2px solid Violet;">Hello World</h1>
+
+        <div class="rectangle" style="border-left: 20px solid green; padding-left: 10px;">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                    style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
+                        class="attributevaluecolor" style="color:mediumblue">="border:2px
+                        solid Tomato;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            h1
+            <span class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                    style="color:mediumblue">="border:2px
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+
+        </div>
+        <div class="button">
+            <button type="button">Try it Yourself >></button>
+        </div>
+
+        <h2 style="color: #cbc8c3;">CSS Color Values</h2>
+        <br>
+        <h3 style=color:white;>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA
+            values, and HSLA values:</h3>
+        <br>
+        <h3 style="color: #cbc8c3;"> Same as color name "Tomato":</h3>
+        <div class="large-rectangle">
+            rgb(255, 99, 71)
+        </div>
+        <br>
+        <div class="large-rectangle">
+            #ff6347
+        </div>
+        <br>
+        <div class="large-rectangle">
+            hsl(9, 100%, 64%)
+        </div>
+        <h3 style="color: #cbc8c3;">Same as color name "Tomato", but 50% transparent:</h3>
+        <div class="faderec">
+            <h1 style="background-color:rgba(255, 99, 71, 0.5);"> rgb(255, 99, 71)</h1>
+            <h1 style="background-color:hsla(9, 100%, 64%, 0.5);"> hsl(9, 100%, 64%)</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br>
+        <div class="rectangle1" style="border-left: 15px solid green; padding-left: 10px;">
+
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span
+                        style="color:mediumblue">="background-color:rgb(255, 99, 71);"></span></span>
+                ...
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                        style="color:mediumblue">&gt;</span></span>
+                <br>
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red">
+                        style<span style="color:mediumblue">="background-color:#ff6347;"></span></span>
+                    ...
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                            style="color:mediumblue">&gt;</span></span>
+                    <br>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red">
+                            style<span style="color:mediumblue">="background-color:hsl(9, 100%, 64%);"></span></span>
+                        ...
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                                style="color:mediumblue">&gt;</span></span>
+                        <!-- <br>
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span  style="color:mediumblue">="background-color:hsl(9, 100%, 64%);"></span></span>
+             ...
+        <span style="color:brown"><span  style="color:mediumblue">&lt;</span>/h1<span  style="color:mediumblue">&gt;</span></span>  
+        <br> -->
+                        <br>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:red">
+                                style<span style="color:mediumblue">="background-color:rgba(255, 99, 71,
+                                    0.5);"></span></span>
+                            ...
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                                    style="color:mediumblue">&gt;</span></span>
+                            <br>
+                            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span
+                                    style="color:red"> style<span style="color:mediumblue">="background-color:hsla(9,
+                                        100%, 64%, 0.5);"></span></span>
+                                ...
+                                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span
+                                        style="color:mediumblue">&gt;</span></span>
+                                <br>
+                                <br>
+        </div>
+        <div class="button">
+            <button type="button">Try it Yourself >></button>
+        </div>
+        <p style="background-color:rgb(221, 221, 69);">Learn more about Color Values<br>
+            You will learn more about <a href=https://www.w3schools.com/css/css_colors_rgb.asp>RGB</a>, <a
+                href="https://www.w3schools.com/css/css_colors_hex.asp">HEX</a>, and <a
+                href="https://www.w3schools.com/css/css_colors_hsl.asp">HSL</a> in the next chapters.</p>
+
+        <br>
+        <br>
+
+        <div class="button">
+            <button type="button">Previous</button>
+        </div>
+        <div class="button">
+            <button type="button">Next</button>
+        </div>
+    </div>
+
+    <!-- Content Section Ends -->
+    <!-- Footer Started -->
+    <footer>
+        <div class="img-contanier2">
+            <div>
+                <br><br>
+                <h4 class="heading4">© Created By Aman Prakash Srivastava</h4>
+                <p class="heading4" style="font-size: 20px;">Group : A2</p>
+                <p class="heading4" style="font-size: 20px;">SIC : 21BCTB97</p>
+                <p class="heading4" style="font-size: 20px;">Roll No. : 07</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ended -->
+</body>
+
+</html>

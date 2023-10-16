@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .main-section {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: 100%;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #cbc8c3;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+
+    .code {
+        border: white
+    }
+
+    .code h4 {
+        color: white;
+        font-size: large;
+        margin: 5px;
+    }
+
+    .code2 h5 {
+        font-size: large;
+    }
+
+    .code_box {
+        border: white solid;
+    }
+
+    .myDiv {
+
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .btn:hover {
+
+        background-color: #adc2ba;
+    }
+
+    .btn {
+        background-color: #04AA6D;
+        width: 100px;
+        height: 42px;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid #04AA6D;
+        border-radius: 5px;
+
+    }
+
+    .icon {
+        font-size: 32px;
+    }
+
+    .icon2 {
+        font-size: 21px;
+    }
+
+    .myDiv3 {
+
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    /*Footer CSS*/
+    .img-contanier2 {
+        background-image: url("https://www.w3schools.com/images/lynx_landing.png"), url("https://www.w3schools.com/images/background_in_space.gif");
+        background-repeat: no-repeat, repeat;
+        background-position: 90% 52%, center center
+            /*left top;; */
+        ;
+        padding-top: 70px;
+        padding-bottom: 220px;
+        height: auto;
+    }
+
+    .heading4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        padding-left: 100px;
+        margin: 0px 0px 0px 15%;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a class="active" href="../css/index.html">CSS</a></li>
+            <li><a href="#">About A1</a></li>
+            <li><a href="../about2.html">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2>CSS Tutorial</h2>
+        <a href="../CSS/index.html">CSS HOME</a>
+        <a href="../CSS/#">CSS Introduction</a>
+        <a href="../CSS/#">CSS Syntax</a>
+        <a href="../CSS/Selector.html">CSS Selectors</a>
+        <a href="../CSS/How to.html">CSS How To</a>
+        <a href="../CSS/Comments.html">CSS Comments</a>
+        <a href="../CSS/Colors.html">CSS Colors</a>
+        <a href="../CSS/#">CSS Backgrounds</a>
+        <a href="../CSS/#">CSS Borders</a>
+        <a href="../CSS/Margins.html">CSS Margins</a>
+        <a href="../CSS/Padding.html">CSS Padding</a>
+        <a href="../CSS/Height-Width.html">CSS Height/Width</a>
+        <a href="../CSS/Box-Model.html">CSS Box Model</a>
+        <a href="../CSS/Outline.html">CSS Outline</a>
+        <a href="../CSS/Text.html">CSS Text</a>
+        <a href="../CSS/#">CSS Fonts</a>
+        <a href="../CSS/Icons.html"class="active">CSS Icons</a>
+        <a href="../CSS/Links.html">CSS Link</a>
+        <a href="../CSS/List.html">CSS List</a>
+        <a href="../CSS/Table.html">CSS Table</a>
+        <a href="../CSS/Display.html">CSS Display</a>
+        <a href="../CSS/css-maxwidth.html">CSS Max-Width</a>
+        <a href="../CSS/Positioning.html">CSS positioning</a>
+        <a href="../CSS/z-index.html">CSS z-index</a>
+        <a href="../CSS/#">CSS Overflow</a>
+        <a href="../CSS/Float.html">CSS Flaot</a>
+        <a href="../CSS/Inline-Block.html">CSS inline-block</a>
+        <a href="../CSS/Layout.html">CSS Aling</a>
+        <a href="../CSS/Forms.html">CSS Forms</a>
+        <a href="../CSS/Dropdown.html">CSS Dropdown</a>
+        <a href="../CSS/Attribute Selector.html" >CSS attribute Selectors</a>
+        <a href="../CSS/Units.html">CSS Units</a>
+        <a href="../CSS/#">CSS Psuedo class</a>
+        <br /><br /><br /><br />
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section">
+        <!-- Do the changes in the main-section -->
+        <h1 style="color: white;">CSS ICONS</h1>
+        <div class='myDiv'>
+            <button class="btn">Previous</button>
+            <button class="btn">Next</button>
+        </div>
+        <hr>
+
+
+        <p style="color: white;">Icons can be easily added to your HTML page,by using an icon library. </p>
+        <hr>
+        <div class="icon">
+            <i class="fa-solid fa-car"></i>
+            <i class="fa-solid fa-cloud"></i>
+            <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+        <hr>
+
+
+
+        <h2 style="color: white;">How To Add Icons</h2>
+        <p style="color: white;">The simplest way to add an icon to your HTML page, is with an icon library, such as
+            Font Awesome.</p>
+        <p style="color: white;">Add the name of the specified icon class to any inline HTML element(like
+            <code class="w3-codespan">&lt i &gt</code>
+            or
+            <code class="tag">&lt span &gt</code>).
+        </p>
+
+        <p style="color: white;">All the icons in the icon libraries below, are scalable vectors that can be customized
+            with CSS (size, color,
+            shadow, etc.)</p>
+        <hr>
+        <h3 style="color: white;">Font Awesome Icons</h3>
+        <p style="color: white;">To use the Font Awesome icons, go to <a href="https://fontawesome.com"
+                target="_blank">fontawesome.com</a>,
+            sign in, and get a code to add in the &lt head &gt section of your HTML
+            page:
+
+            <span style="background-color: rgba(222, 222, 222, 0.1); color: #ff9999; padding: 0.5vh 0.5vw;">&lt;script
+                src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous" &gt;&lt;script&gt;</span>
+        </p>
+
+        <p style="color: white;">Read more about how to get started with Font Awesome in our <u>Font Awesome 5
+                tutorial</u>.</p>
+        <p style="color: white;"><b>Note </b>: No downloading or installation is required!</p>
+        <hr>
+
+        <div class="code">
+            <h4 style="color: white;">Example</h4>
+            <div class="code_box">
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:white">
+                        html</span><span class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>html<span class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>head<span class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>script<span class="attributecolor" style="color:white"> src<span
+                            class="attributevaluecolor"
+                            style="color:white">="https://kit.fontawesome.com/a076d05399.js"</span> crossorigin<span
+                            class="attributevaluecolor" style="color:white">="anonymous"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>/script<span class="tagcolor"
+                        style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>/head<span class="tagcolor"
+                        style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>body<span class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>i<span class="attributecolor" style="color:white"> class<span
+                            class="attributevaluecolor" style="color:white">="fas fa-cloud"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>i<span class="attributecolor" style="color:white"> class<span
+                            class="attributevaluecolor" style="color:white">="fas fa-heart"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>i<span class="attributecolor" style="color:white"> class<span
+                            class="attributevaluecolor" style="color:white">="fas fa-car"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>i<span class="attributecolor" style="color:white"> class<span
+                            class="attributevaluecolor" style="color:white">="fas fa-file"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>i<span class="attributecolor" style="color:white"> class<span
+                            class="attributevaluecolor" style="color:white">="fas fa-bars"</span></span><span
+                        class="tagcolor" style="color:white">&gt;</span></span>
+                <br>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>/body<span class="tagcolor"
+                        style="color:white">&gt;</span></span>
+                <br>
+                <span class="tagnamecolor" style="color:white"><span class="tagcolor"
+                        style="color:white">&lt;</span>/html<span class="tagcolor"
+                        style="color:white">&gt;</span></span>
+
+
+
+
+
+            </div>
+
+        </div>
+        <div class="code2">
+            <h5 style="color: white;">Result:</h5>
+
+
+        </div>
+        <div class="icon2">
+            <i class="fa-solid fa-cloud"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-folder-open"></i>
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+        <div class='myDiv2'>
+            <button class="btn">Try It Yourself>></button>
+        </div>
+        <hr>
+
+        <p style="color: white; font-size: large;">For a complete list of all icons, visit our Icon Tutorial.
+
+        </p>
+        <div class='myDiv3'>
+            <button class="btn">Previous</button>
+            <button class="btn">Next</button>
+        </div>
+
+        <!-- <h6 style="color: white;font-size: large;">BOOTSTRAP ICONS</h6>
+        <p style="color: white;">To use the Bootstrap glyphicons, add the following line inside the &lt head &gt section of your HTML page:
+            <span style="background-color: rgba(222, 222, 222, 0.1); color: #ff9999; padding: 0.5vh 0.5vw;">&lt;script
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> &gt;&lt;script&gt;</span>
+        </p>
+         -->
+
+
+
+
+
+    </div>
+    <!-- Content Section Ends -->
+    <!-- Footer Started -->
+    <footer>
+        <div class="img-contanier2">
+            <div>
+                <br><br>
+                <h4 class="heading4">© Created By Anushka Mishra</h4>
+                <p class="heading4" style="font-size: 20px;">Group : A2</p>
+                <p class="heading4" style="font-size: 20px;">SIC : </p>
+                <p class="heading4" style="font-size: 20px;">Roll No. : 19</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ended -->
+</body>
+
+</html>

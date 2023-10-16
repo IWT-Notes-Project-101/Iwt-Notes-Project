@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>css_attribute_selectors</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #04aa6d;
+  }
+
+  .main-section {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgb(29, 42, 53);
+    height: auto;
+    margin-left: 15%;
+  }
+
+  .side-nav {
+    top: 47px;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(21, 32, 43);
+    list-style: none;
+  }
+
+  h2 {
+    margin: 10px 0px;
+    color: #cbc8c3;
+    padding: 8px 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  .side-nav a {
+    display: block;
+    text-decoration: none;
+    color: #cbc8c3;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 2px 1px 1px 5px;
+    font-size: 15px;
+  }
+
+  .side-nav a:hover:not(.active) {
+    background-color: rgba(240, 240, 235, 0.308);
+  }
+
+  /* Mobile Phones (Portrait) - Up to 320px */
+  @media only screen and (max-width: 320px) {
+    /* Your styles for screens up to 320px wide */
+  }
+
+  /* Mobile Phones (Landscape) - Up to 480px */
+  @media only screen and (max-width: 480px) {
+    /* Your styles for screens up to 480px wide (including 320px) */
+  }
+
+  /* Small Tablets (Portrait) - Up to 768px */
+  @media only screen and (max-width: 768px) {
+    /* Your styles for screens up to 768px wide (including 320px and 480px) */
+  }
+
+  @media only screen and (max-width: 1024px) {}
+
+  /* Tablets and Small Desktops - Up to 2000px */
+  @media only screen and (max-width: 2000px) {
+
+    /* Your styles for screens up to 1024px wide (including smaller sizes) */
+    .main {
+      align-content: center;
+      width: 85%;
+      height: auto;
+      /* margin: 90px 0px 0px; */
+      margin: 20px 0px 0px 0px;
+      padding: 12px 32px 32px;
+      /* font: 15px Verdana, sans-serif; */
+      padding: 10px;
+      color: #cbc8c3;
+    }
+
+    #adv {
+      text-align: center;
+      width: auto;
+      height: 90px;
+    }
+
+    #adv img {
+      height: 90px;
+      width: auto;
+      justify-content: space-around;
+    }
+
+    #fh1 {
+      width: auto;
+      height: 63px;
+      font-size: 42px;
+      margin: 30px 0px 0px 0px;
+
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    #prevnext {
+      color: #dddddd;
+      display: flex;
+      justify-content: space-between;
+      height: 45px;
+      width: auto;
+    }
+
+    #prevnext button {
+      border-radius: 10px;
+      height: 45PX;
+      width: 126.09PX;
+      color: #ffffff;
+      padding: 8px 19px;
+      font-size: 18px;
+      font-family: sans-serif;
+      background-color: #04aa6d;
+      margin: 0px 10px;
+      transition: background-color 0.3s;
+    }
+
+    #prevnext button:hover {
+      background-color: #056c46;
+    }
+
+    #sh2 {
+      color: #DDDDDD;
+      font-size: 32px;
+      font-family: Arial, sans-serif;
+      margin: 30px 0px 0px 0px;
+    }
+
+    #sh3 {
+      color: #DDDDDD;
+      font-size: 32px;
+      margin: 10px 0px 0px 0px;
+      font-family: Arial, sans-serif;
+    }
+
+    .p1 {
+      color: #DDDDDD;
+      font-size: 18px;
+      margin: 20px 0px 0px 0px;
+    }
+
+    #th3 {
+      color: #DDDDDD;
+      font-size: 24px;
+      margin: 10px 10px 0px 0px;
+      font-family: Arial, sans-serif;
+
+    }
+
+    .example {
+      width: auto;
+      height: 231px;
+      background-color: #38444d;
+      padding: 8px 20px;
+      margin: 24px 0px 0px 10px;
+      border-radius: 10px;
+
+    }
+
+    #innerex {
+      margin-top: 20px;
+      width: auto;
+      height: 92.5px;
+      background-color: rgb(21, 32, 43);
+      padding: 8px 12px;
+      border-left-color: rgb(40, 44, 52);
+    }
+
+    .p2 {
+      color: #DDDDDD;
+      font-size: 18px;
+      margin: 0px 10px;
+    }
+
+    #tryit {
+      border-radius: 5px;
+      height: 37.5px;
+      width: 13%;
+      color: #ffffff;
+      padding: 8px 19px;
+      font-size: 17px;
+      font-family: sans-serif;
+      background-color: #059862;
+      margin: 20px 0px 16px 0px;
+      border: none;
+      overflow: hidden;
+      transition: background-color 0.3s;
+    }
+
+    #tryit:hover {
+      background-color: #056c46;
+    }
+
+    hr {
+      border: 0;
+      border-top-width: 0px;
+      border-top-style: none;
+      border-top-color: currentColor;
+      border-top: 1px solid #eee;
+      margin: 20px 0px 0px 0px;
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+
+    }
+
+    .styforms {
+      width: auto;
+      height: 500.5px;
+      background-color: #38444d;
+      padding: 8px 20px;
+      margin: 24px 0px 0px 10px;
+      border-radius: 10px;
+    }
+
+    #styleinner {
+      margin-top: 20px;
+      width: auto;
+      height: 340px;
+      background-color: rgb(21, 32, 43);
+      padding: 8px 12px;
+      border-left-color: rgb(40, 44, 52);
+    }
+
+    .testyour {
+      height: 830.117px;
+      width: auto;
+      background-color: #38444d;
+      padding: 32px -20px;
+      border-radius: 5px;
+      color: #ffffff;
+      padding: 8px 20px;
+      margin-bottom: 50px;
+
+    }
+
+    #exercise {
+      padding: 8px 12px;
+      height: 730.117px;
+      width: auto;
+      background-color: rgb(21, 32, 43);
+    }
+
+    #style {
+      height: 450px;
+      width: auto.2px;
+      padding: 4px 8px;
+      margin-left: 4px;
+      background-color: #38444d;
+    }
+
+    .p3 {
+      color: #DDDDDD;
+      font-size: 2rem;
+      font-family: monospace, monospace;
+
+    }
+
+    #inp {
+      height: 25.4px;
+      width: 100px;
+      background-color: #DDDDDD;
+      color: #111;
+    }
+
+    #stylebut {
+      border-radius: 5px;
+      height: 39.5px;
+      width: 170.667px;
+      color: #ffffff;
+      padding: 8px 19px;
+      font-size: 17px;
+      font-family: sans-serif;
+      background-color: #059862;
+      margin: 20px 0px 16px 0px;
+      border: none;
+      overflow: hidden;
+      margin-left: 10px;
+      transition: background-color 0.3s;
+    }
+
+    #stylebut:hover {
+      background-color: #056c46;
+    }
+
+    .tabl {
+      width: auto;
+      height: 90%;
+      margin: 10px 20px 20px 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    #row1,
+    #row3,
+    #row5,
+    #row7 {
+      background-color: #38444d;
+      color: #ddd;
+    }
+
+    #row2,
+    #row4,
+    #row6,
+    #heading {
+      background-color: rgb(21, 32, 43);
+      color: #ddd;
+    }
+
+    td,
+    th p {
+      font-size: 20px;
+    }
+
+    td a {
+      text-decoration: underline;
+      color: #ddd;
+    }
+
+    th,
+    td {
+      padding: 8px 8px;
+      text-align: left;
+      vertical-align: top;
+      color: #ddd;
+    }
+
+    #user {
+      width: auto;
+      height: 50.5px;
+
+      text-align: center;
+    }
+  }
+
+  /* Large Desktops - Up to 1440px */
+  @media only screen and (max-width: 1440px) {
+    /* Your styles for screens up to 1440px wide (including smaller sizes) */
+  }
+
+  /* Extra Large Desktops (e.g., 4K) - Over 1440px */
+  @media only screen and (min-width: 1441px) {
+    /* Your styles for screens wider than 1440px (including 1440px) */
+  }
+
+  /*Footer Css*/
+  .img-contanier2 {
+    background-image: url("https://www.w3schools.com/images/lynx_landing.png"), url("https://www.w3schools.com/images/background_in_space.gif");
+    background-repeat: no-repeat, repeat;
+    background-position: 90% 52%, center center
+      /*left top;; */
+    ;
+    padding-top: 70px;
+    padding-bottom: 220px;
+    height: auto;
+  }
+
+  .heading4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    padding-left: 100px;
+    margin: 0px 0px 0px 15%;
+  }
+</style>
+
+<body>
+  <!-- Start of horizontal Navigation Section -->
+  <div class="horizontal-navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a class="active" href="../css/index.html">CSS</a></li>
+      <li><a href="#">About A1</a></li>
+      <li><a href="../about2.html">About A2</a></li>
+    </ul>
+  </div>
+  <!-- End of horizontal Navigation Section -->
+
+  <!-- Start of vertical Navigation Section -->
+  <div class="side-nav">
+    <h2>CSS Tutorial</h2>
+    <a href="../CSS/index.html">CSS HOME</a>
+    <a href="../CSS/#">CSS Introduction</a>
+    <a href="../CSS/#">CSS Syntax</a>
+    <a href="../CSS/Selector.html">CSS Selectors</a>
+    <a href="../CSS/How to.html">CSS How To</a>
+    <a href="../CSS/Comments.html">CSS Comments</a>
+    <a href="../CSS/Colors.html">CSS Colors</a>
+    <a href="../CSS/#">CSS Backgrounds</a>
+    <a href="../CSS/#">CSS Borders</a>
+    <a href="../CSS/Margins.html">CSS Margins</a>
+    <a href="../CSS/Padding.html">CSS Padding</a>
+    <a href="../CSS/Height-Width.html">CSS Height/Width</a>
+    <a href="../CSS/Box-Model.html">CSS Box Model</a>
+    <a href="../CSS/Outline.html">CSS Outline</a>
+    <a href="../CSS/Text.html">CSS Text</a>
+    <a href="../CSS/#">CSS Fonts</a>
+    <a href="../CSS/Icons.html">CSS Icons</a>
+    <a href="../CSS/Links.html">CSS Link</a>
+    <a href="../CSS/List.html">CSS List</a>
+    <a href="../CSS/Table.html">CSS Table</a>
+    <a href="../CSS/Display.html">CSS Display</a>
+    <a href="../CSS/css-maxwidth.html">CSS Max-Width</a>
+    <a href="../CSS/Positioning.html">CSS positioning</a>
+    <a href="../CSS/z-index.html">CSS z-index</a>
+    <a href="../CSS/#">CSS Overflow</a>
+    <a href="../CSS/Float.html">CSS Flaot</a>
+    <a href="../CSS/Inline-Block.html">CSS inline-block</a>
+    <a href="../CSS/Layout.html">CSS Aling</a>
+    <a href="../CSS/Forms.html">CSS Forms</a>
+    <a href="../CSS/Dropdown.html">CSS Dropdown</a>
+    <a href="../CSS/Attribute Selector.html" class="active">CSS attribute Selectors</a>
+    <a href="../CSS/Units.html">CSS Units</a>
+    <a href="../CSS/#">CSS Psuedo class</a>
+    <br /><br /><br /><br />
+  </div>
+  <!-- End of vertical Navigation Section -->
+
+  <!-- Content Section -->
+  <div class="main-section">
+    <!-- Do the changes in the main-section -->
+    <div class="main">
+      <!-- <div id="adv">
+        <img src="./Images/ad.png" alt="adveritesment" />
+      </div> -->
+      <h1 id="fh1">CSS Attribute Selectors</h1>
+      <div id="prevnext">
+        <button><span class="glyphicon glyphicon-chevron-left">Previous</span></button>
+        <button>Next<span class="glyphicon glyphicon-chevron-right"></span></button>
+      </div>
+      <hr>
+      <h1 id="sh3">Style HTML Elements With Specific Attributes </h1>
+      <p class="p1">It is possible to style HTML elments that have specific attributes or attribute values.</p>
+      <hr>
+      <h1 id="sh2">CSS[attribute] Selector</h1>
+      <p class="p1">The <span style="color: #FF9999; padding: 0px 4px;">[attribute]</span> selector is used to select
+        elements with a target attribute.</p>
+      <p class="p1">The following example selects all
+        <span>&lta&gt</span> elements with a target attribute
+      </p>
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[target]</span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background-color
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+        </p>
+      </div>
+      <hr>
+      <h1 id="sh2">CSS [attribute="Value"]Selector</h1>
+      <p class="p1">The <span style="color:#ff9999 ;">[attribute="value"]</span> selector is used to select elemetns
+        with a specified attribute and value</p>
+      <p class="p1">The following example selects all elemets with a title attribute that contains a space-separated of
+        words one of which is "flower": </p>
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[title~="flower"]</span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 border
+            </span>:<span style="color: #88C999;">&#160 5px solid yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <p class="p1">The example above will match elements with title="flower",title="summer flower",and title="flower
+        new",but not title="my-flower",or title="flowers".</p>
+      <hr>
+      <br />
+      <hr>
+      <h1 class="fh1">CSS [attribute|="value"] Selector</h1>
+      <p class="p1">The <span style="color:#ff9999 ;">[attribute="value"]</span> selector is used to select elemetns
+        with a specified attribute,whose value can be exactly the specified value,or the specified value followed by a
+        hypen(-).</p>
+      <p class="p1"><span style="font-weight: bolder;">Note:</span>The value has to be a whole word,either alone,like
+        class="top",or followed by a hypen(-),like class="top-text".</p>
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[class|="top"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <hr>
+      <h1 class="th1">CSS[attribute^="value"] Selector</h1>
+      <p class="p1">The <span style="color:#ff9999 ;">[attribute="value"]</span>selector is used to select elements with
+        the specified attribute, whose value starts with the specified value.</p>
+      <p class="p1">The following example selects all elements with a class attribute value that starts with "top":</p>
+      <p class="p1"><span style="font-weight: bolder;">Note:</span>The value does not have to be a whole word!</p>
+
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[class^="top"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <hr>
+      <h1 class="th1">CSS [attribute$="value"] Selector </h1>
+      <p class="p1">The <span style="color:#ff9999 ;">[attribute="value"]</span>selector is used to select elements
+        whose attribute value ends with a specified value.</p>
+      <p class="p1">The following example selects all elements with a class attribute value that ends with "test":</p>
+      <p class="p1"><span style="font-weight: bolder;">Note:</span>The value does not have to be a whole word!</p>
+
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[class$="test"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <hr>
+
+      <h1 class="th1">CSS [attribute*="value"] Selector</h1>
+      <p class="p1">The <span style="color:#ff9999 ;">[attribute="value"]</span>selector is used to select elements
+        whose attribute value contains a specified value.</p>
+      <p class="p1">The following example selects all elements with a class attribute value that contains "te":</p>
+      <p class="p1"><span style="font-weight: bolder;">Note:</span>The value does not have to be a whole word!</p>
+
+      <div class="example">
+        <h3 id="th3">Example</h3>
+        <div id="innerex">
+          <p class="p2">a<span style="color: #FF9999;">[class*="test"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <hr>
+      <br>
+      <h1 class="th1">Styling Forms</h1>
+      <div class="styforms">
+        <h3 id="th3">Example</h3>
+        <div id="styleinner">
+          <p class="p2"><span style="color: #FF9999;">input[type="text"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 width
+            </span>:<span style="color: #88C999;">&#160 150px</span>;</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 display
+            </span>:<span style="color: #88C999;">&#160 block</span>;</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 margin-bottom
+            </span>:<span style="color: #88C999;">&#160 10px</span>;</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 background-color
+            </span>:<span style="color: #88C999;">&#160 yellow</span>;</p>
+          <p class="p2">&#125</p>
+          <br>
+          <p class="p2"><span style="color: #FF9999;">input[type="button"] </span> &#123</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 width
+            </span>:<span style="color: #88C999;">&#160 120px</span>;</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 margin-left
+            </span>:<span style="color: #88C999;">&#160 35px</span>;</p>
+          <p class="p2"> <span style="color: #C5A5C5;">&#160 &#160 display
+            </span>:<span style="color: #88C999;">&#160 block</span>;</p>
+          <p class="p2">&#125</p>
+        </div>
+        <button type="button" class="btn btn-default btn-sm" id="tryit">
+          Try it YourSelf&#160<span class="glyphicon glyphicon-forward "></span>
+        </button>
+      </div>
+      <br>
+      <p class="p1"><span style="font-weight: bolder;">Tip:</span>Visit our CSS Forms Tutorial for more examples on how
+        to style forms with CSS.</p>
+      <hr>
+      <br>
+      <br>
+      <div class="testyour">
+        <h1 class="th1">Test Yourself With Excercises</h1>
+        <div id="exercise">
+          <h1 class="sh2">Exercise:</h1>
+          <p class="p1">Set the background color to "red" for <a> elements that have a <span
+                style="color: #ff9999; background-color: rgba(222,222,222,0.1);">target</span> attribute.</p>
+          <br>
+          <div id="style">
+            <br>
+            <br>
+            <p class="p3"> &LTstyle&GT </p>
+            <p class="p3">&#160<input id="inp" type="text">&#160&#123 </p>
+            <p class="p3">background-color: red;</p>
+            <p class="p3">&LT/style&GT</p>
+            <br>
+            <p class="p3">&LTbody&GT</p>
+
+            <p class="p3">&#160 &LTa href="https://w3schools.com"&GT w3 schools.com&LT/a&GT</p>
+
+            <p class="p3">&#160 &LTa href="http://disney.com" target="_blank"&GT w3 Disney.com&LT/a&GT</p>
+
+            <p class="p3">&#160 &LTa href="http://wikipedia.org" target="_top"&GT w3 wikipedia.org&LT/a&GT</p>
+            <p class="p3">&LT/body&GT</p>
+          </div>
+          <button type="button" class="btn btn-default btn-sm" id="stylebut">
+            Submit Answer&#160<span class="glyphicon glyphicon-forward "></span>
+          </button>
+          <br>
+          <br>
+          <p class="p2"><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_attribute_selectors1"
+              style="text-decoration:underline;color: #eee; ">Start The Exercise</a></p>
+        </div>
+      </div>
+      <hr>
+      <h1 class="th1">All CSS Attribute Selectors</h1>
+      <div class="tabl">
+        <table>
+          <tbody>
+            <tr id="heading">
+              <th>Selector</th>
+              <th>Example</th>
+              <th>Example description</th>
+            </tr>
+            <tr id="row1">
+              <td>
+                <p> <a href="https://www.w3schools.com/cssref/sel_attribute.php">[attribute]</a></p>
+              </td>
+              <td>
+                <p>[target]</p>
+              </td>
+              <td>
+                <p>Selects all elements with a target attribute</p>
+              </td>
+            </tr>
+            <tr id="row2">
+              <td>
+                <p><a href="https://www.w3schools.com/cssref/sel_attribute_value.php">[attribute=value]</a></p>
+              </td>
+              <td>
+                <p>[target="_blank"]</p>
+              </td>
+              <td>
+                <p>Selects all elements with target="_blank"</p>
+              </td>
+            </tr>
+
+            <tr id="row3">
+              <td><a href="https://www.w3schools.com/cssref/sel_attribute_value_contains.php">[attribute~=value]</a>
+              </td>
+              <td>
+                <p>[title~="flower"]</p>
+              </td>
+              <td>
+                <p>Selects all elements with a title attribute that contains a space-separated list of words, one of
+                  which
+                  is "flower"</p>
+              </td>
+            </tr>
+
+            <tr id="row4">
+              <td><a href="https://www.w3schools.com/cssref/sel_attribute_value_lang.php">[attribute|=value]</a></td>
+              <td>
+                <p>[lang|="en"]</p>
+              </td>
+              <td>
+                <p>Selects all elements with a lang attribute value starting with "en"</p>
+              </td>
+            </tr>
+
+            <tr id="row5">
+              <td><a href="https://www.w3schools.com/cssref/sel_attr_begin.php">[attribute^=value]</a></td>
+              <td>
+                <p>a[href^="https"]</p>
+              </td>
+              <td>
+                <p>Selects all &LTa&GT elements with a href attribute value starting with "https"</p>
+              </td>
+            </tr>
+
+            <tr id="row6">
+              <td><a href="https://www.w3schools.com/cssref/sel_attr_end.php">[attribute$=value]</a></td>
+              <td>
+                <p>a[href$=".pdf"]</p>
+              </td>
+              <td>
+                <p>Selects all &LTa&GT elements with a href attribute value ending with ".pdf"</p>
+              </td>
+            </tr>
+
+            <tr id="row7">
+              <td><a href="https://www.w3schools.com/cssref/sel_attr_contain.php">[attribute*=value]</a></td>
+              <td>
+                <p>a[href*="w3schools"]</p>
+              </td>
+              <td>
+                <p> Selects all &LTa&GT elements with a href attribute value containing the substring "w3schools"</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="prevnext">
+        <button><span class="glyphicon glyphicon-chevron-left">Previous</span></button>
+        <button>Next<span class="glyphicon glyphicon-chevron-right"></span></button>
+      </div>
+      <!-- <div id="user">
+        <a href="https://my-learning.w3schools.com/"><img src="./Images/user.png" alt="userprofile"></a>
+      </div> -->
+    </div>
+  </div>
+  <!-- Content Section Ends -->
+  <!-- Footer Started -->
+  <footer>
+    <div class="img-contanier2">
+      <div>
+        <br><br>
+        <h4 class="heading4">© Created By Sai Kishan Rao</h4>
+        <p class="heading4" style="font-size: 20px;">Group : A2</p>
+        <p class="heading4" style="font-size: 20px;">SIC : </p>
+        <p class="heading4" style="font-size: 20px;">Roll No. : 36</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ended -->
+</body>
+
+</html>
