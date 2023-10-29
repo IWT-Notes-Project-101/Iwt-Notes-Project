@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML STYLES</title>
+</head>
+<style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .btn{
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #edeaea;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #fffcfc;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .main-section {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(255, 255, 255);
+        list-style: none;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #001c3b;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+    .abcd
+    {
+        padding: 200px;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html" style="color: black;">Home</a></li>
+            <li><a class="active" href="../css/index.html">HTML</a></li>
+            <li><a href="#" style="color: black;">CSS</a></li>
+            <li><a href="#" style="color: black;">About A1</a></li>
+            <li><a href="../about2.html" style="color: black;">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2 style="color: black;">HTML Tutorial</h2>
+        <a href="/index_HTML.html">HTML HOME</a>
+            <a href="/HTML_Introduction/htmlINTRO.html">HTML Introduction</a>
+            <a href="./html_editors/html_editors.html">HTML Editors</a>
+            <a href="/html_basic/index.html">HTML Basic</a>
+            <a href="#">HTML Elements</a>
+            <a href="/HTML-attribute/index.html">HTML Attributes</a>
+            <a href="/html_heading/index.html">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a class="active" href="/HTML STYLES/HTML_STYLES.HTML">HTML Styles</a>
+            <a href="#">HTML Formatting</a>
+            <a href="#">HTML Quotations</a>
+            <a href="#">HTML Comments</a>
+            <a href="/Html_colors/index.html">HTML Colors</a>
+            <a href="/html_css/html_css.html">HTML CSS</a>
+            <a href="">HTML Links</a>
+            <a href="/HTML_Images/index.html">HTML Images</a>
+            <a href="/HTML_FAVICON/HTML_FAVICON/FAVICON/favicon.html">HTML Favicon</a>
+            <a href="/Html page title/html page title.html">HTML Page Title</a>
+            <a href="/HTML_tables/project_table.html">HTML Tables</a>
+            <a href="/html_hlist/hlists1.html">HTML Lists</a>
+            <a href="/html_blocks/index.html">HTML Block & Inline</a>
+            <a href="/html_classes/html_classes.html">HTML Classes</a>
+            <a href="/HTML_Id/Html_Id.html">HTML Id</a>
+            <a href="/Iframe1.html">HTML Iframes</a>
+            <a href="/HTML_JSCRIPT/index.html">HTML JavaScript</a>
+            <a href="/html_filepaths/file_path.html">HTML File Paths</a>
+            <a href="/HTML_head/index.html">HTML Head</a>
+            <a href="/HTML_Layout/index.html">HTML Layout</a>
+            <a href="/html_responsive/index.html">HTML Responsive</a>
+            <a href="/html_computercode/index.html">HTML Computercode</a>
+            <a href="/HTML Semantic Elements.html">HTML Semantics</a>
+            <a href="/STYLE_GUIDE/STYLE.html">HTML Style Guide</a>
+            <a href="/HTML_SYMBOLS/index.html">HTML Symbols</a>
+            <a href="#">HTML Emojis</a>
+            <a href="#">HTML Charset</a>
+            <a href="#">HTML URL Encode</a>
+            <a href="#">HTML vs. XHTML</a>
+        <br><br><br><br>
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section" style="color: #cbc8c3;">
+       
+        <h1 style="color: black;">HTML Styles</h1>
+        
+       <div class=".btn">
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html_paragraphs.asp" >
+                <button class="button" style="color: white;">Previous</button>
+            </a>
+            <a class="w3-left w3-btn" href="" >
+                <button class="button" style="color: white;">Next</button>
+            </a>
+
+       </div>
+        <hr>
+        <p style="color: black;">The HTML <code class="w3-codespan">style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+        <hr>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <div class="w3-container w3-white">
+            <p style="font-size:20px;color:red;">I am Red</p>
+            <p style="font-size:20px;color:blue;">I am Blue</p>
+            <p style="font-size:36px;margin:12px 0; color:  black;" >I am Big</p>
+            </div>
+        </div>
+        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_intro">
+            <button class="button" style="color: white;">Try Your Self</button>
+        </a>
+        <hr>
+        <h1 style="color: black;">The HTML Style Attribute</h1>
+        <h3 style="color:  black;">Setting the style of an HTML element, can be done with the style attribute.</h3>
+        <h3 style="color:  black;">The HTML style attribute has the following syntax:</h3>
+        <br>
+        <br>
+        <div class="w3-code notranslate htmlHigh" style="color: black;">
+            &lt;<em>tagname</em> style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;
+        </div>
+        <br>
+        <br>
+        <h3 style="color:  black;">The <strong style="text-transform:uppercase;">property</strong> is a CSS property. The <strong style="text-transform: uppercase;">value</strong> is a CSS value.</h3>
+        <br>
+        <br>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <h3 style="color:  black;">Set the background color for a page to powderblue:</h3>
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;body style=&quot;background-color:powderblue;&quot;&gt;<br><br>&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <h3 style="color:  black;">Set background color for two different elements:</h3>
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;body&gt;<br><br>&lt;h1 style=&quot;background-color:powderblue;&quot;&gt;This is a heading&lt;/h1&gt;<br>&lt;p style=&quot;background-color:tomato;&quot;&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color2">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <hr>
+        <br>
+        <hr>
+        <h1 style="color:  black;">Text Color</h1>
+        <h3 style="color:  black;">The CSS color property defines the text color for an HTML element:</h3>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <h3 style="color:  black;">Set background color for two different elements:</h3>
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;h1 style=&quot;color:blue;&quot;&gt;This is a heading&lt;/h1&gt;<br>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1 style="color:  black;">Fonts</h1>
+        <h3 style="color:  black;">The CSS font-family property defines the font to be used for an HTML element:</h3>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <!-- <h3 style="color: white;"></h3> -->
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;h1 style=&quot;font-family:verdana;&quot;&gt;This is a heading&lt;/h1&gt;<br>&lt;p style=&quot;font-family:courier;&quot;&gt;This is a paragraph.&lt;/p&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <br>
+        <hr>
+        <h1 style="color:  black;">Text Size</h1>
+        <h3 style="color:  black;">The CSS font-size property defines the text size for an HTML element:</h3>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <!-- <h3 style="color: white;"></h3> -->
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;h1 style=&quot;font-size:300%;&quot;&gt;This is a heading&lt;/h1&gt;<br>&lt;p style=&quot;font-size:160%;&quot;&gt;This is a paragraph.&lt;/p&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-size">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <br>
+        <hr>
+        <h1 style="color:  black;">Text Alignment</h1>
+        <h3 style="color:  black;">The CSS text-align property defines the horizontal text alignment for an HTML element:</h3>
+        <div class="w3-example">
+            <h2 style="color:  black;">Example</h2>
+            <!-- <h3 style="color: white;"></h3> -->
+            <div class="w3-container w3-white">
+            <p style="color: rgb(65, 122, 70);">&lt;h1 style=&quot;text-align:center;&quot;&gt;Centered Heading&lt;/h1&gt;<br> &lt;p style=&quot;text-align:center;&quot;&gt;Centered paragraph.&lt;/p&gt;</p>
+            </div>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_text-align">
+                <button class="button" style="color: white;">Try Your Self</button>
+            </a>
+        </div>
+        <br>
+        <hr>
+        <br>
+       
+        <h1 style="color: black;">Chapter Summary</h1>
+        <p>
+            <h3 style="color:  black;">Use the style attribute for styling HTML elements</li>
+            <h3 style="color:  black;">Use background-color for background color</h3>
+            <h3 style="color:  black;">Use color for text colors</h3>
+            <h3 style="color:  black;">Use font-family for text fonts</h3>
+            <h3 style="color:  black;">Use font-size for text sizes</h3>
+            <h3 style="color:  black;">Use text-align for text alignment</h3>
+        </p>
+        <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html_paragraphs.asp" >
+            <button class="button" style="color: white;">Previous</button>
+        </a>
+        <a class="w3-left w3-btn" href="" >
+            <button class="button" style="color: white;">Next</button>
+        </a>
+        <br>
+        <br>
+   
+    </div>
+    <!-- Content Section Ends -->
+</body>
+
+</html>

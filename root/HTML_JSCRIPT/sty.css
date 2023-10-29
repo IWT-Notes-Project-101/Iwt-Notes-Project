@@ -1,0 +1,265 @@
+*{
+    /* margin:5px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.main-section {
+  padding: 20px;
+  margin-top: 30px;
+  /* background-color: rgb(29, 42, 53); */
+  height: 100vh;
+  margin-left: 15%;
+}
+
+.side-nav {
+  top: 47px;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(21, 32, 43);
+  list-style: none;
+}
+
+.side-nav h2 {
+  margin: 10px 0px;
+  color: #cbc8c3;
+  padding: 8px 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+.side-nav a {
+  display: block;
+  text-decoration: none;
+  color: #cbc8c3;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 2px 1px 1px 16px;
+  font-size: 15px;
+}
+
+.side-nav a:hover:not(.active) {
+  background-color: rgba(240, 240, 235, 0.308);
+}
+.topButtons{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+  }
+
+  h1{
+    font-size: 60px;
+  }
+  h1,h2,h3{
+    font-weight: 100;
+  }
+
+  .topButtons button,.w3-btn{
+    padding:10px;
+    color:white;
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+  }
+
+  .border-div {
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid #eae5e5; 
+    border-bottom: 2px solid #eae5e5; 
+    box-shadow: 0px 5px 5px rgba(230, 222, 222, 0.2); 
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.para-2{
+    border-bottom: 2px solid #eae5e5; 
+    box-shadow: 0px 5px 5px rgba(230, 222, 222, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    margin: 20px; 
+    
+}
+.para-2 h2{
+    font-size: 38px;
+}
+.para-2 p,h2{
+    margin-bottom: 25px;
+}
+
+
+.w3-example {
+  background-color:  #e7e9eb; 
+  margin-bottom: 34px;
+}
+.w3-example button{
+  padding:10px;
+  color:white;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 6px;
+  font-weight: bolder;
+  width: 30%;  
+}
+
+
+
+
+
+.w3-example {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    margin: 0px 0px 18px 0px;
+}
+
+.w3-example h3, .w3-example .w3-code, .w3-example p{
+    margin: 18px 18px 0px 18px; 
+}
+.w3-example h3{
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.w3-example button {
+  margin: 20px 20px 25px 20px;
+}
+
+
+.w3-code {
+  margin:25px;
+  border-left: 4px solid #04aa6d; 
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 5px;
+}
+
+.btn button{
+  background-color: #e7e9eb;
+  color:black;
+  font-weight: 100;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.btn {
+  border-left:none;
+}
+.btn h2{
+  font-weight: 100;
+}
+
+.extra{
+  border-top: 2px solid #eae5e5; 
+}
+.extra h2{
+  margin-top:20px;
+}
+.w3-note{
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  height: 100%; 
+  background-color: #ffffcc;
+  margin-bottom: 18px;
+  overflow-wrap: break-word;
+}
+.w3-note p{
+margin-top: 22px;
+
+}
+
+.w3-codespan{
+  color:red;
+  background-color: #e7e9eb;
+}
+
+
+#w3-exerciseform{
+  background-color: #282a35;
+  color:#e7e9eb;
+  padding:18px 18px 15px 18px;
+}
+
+.exercisewindow{
+  background-color: #ffffff;
+  color:black;
+  padding:15px 15px 1px 15px;
+}
+.exerciseprecontainer{
+  background-color: #e7e9eb;
+  padding:15px 15px 15px 15px;
+}
+.exerciseprecontainer input{
+  border: none;
+}
+ p a{
+  color: black;
+  text-decoration: none underline;
+
+}
+
+p a:hover{
+  color: #04aa6d;
+}
+
+.ws-table-all {
+  border: 1.3px solid #e7e9eb;
+  border-collapse: collapse;
+  text-align: left;
+}
+.ws-table-all tbody, .ws-table-all td, .ws-table-all tr, .ws-table-all th{
+  padding: 5px;
+}
+
+.ws-table-all tr:nth-child(even) td {
+  background-color: #e7e9eb;
+}
+
+.ws-table-all a{
+  color:black;
+  text-decoration: none underline;
+}
+.ws-table-all a:hover{
+  color:#04aa6d;
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: rgb(29, 42, 53);
+        font-family: Verdana, sans-serif;
+    }
+
+    .horizontal-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .horizontal-navbar li {
+        float: left;
+    }
+
+    .horizontal-navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .horizontal-navbar li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .position {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    .side-nav h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #cbc8c3;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+
+    .position {
+        width: 70%;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        line-height: 1.7rem;
+        border-right: 1px solid #38444d;
+    }
+
+    #topHeading {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: normal;
+    }
+
+    .subText {
+        font-size: 1rem;
+    }
+
+    .buttonGroup {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttonGroup button {
+        padding: 1.5vh 2vw;
+        background: #04AA6D;
+        font-weight: bold;
+        color: white;
+        font-size: 1.125rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .buttonGroup button:hover {
+        background-color: #027c50;
+    }
+
+    #property {
+        background: rgba(222, 222, 222, 0.1);
+        color: #ff9999;
+        padding: 0.5vh 0.5vw;
+    }
+
+    #heading {
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ddd;
+    }
+
+    .postion-values li {
+        padding: 0.6vh 0;
+        font-size: 1.3rem;
+    }
+
+    .mainContent hr {
+        border: 1px solid #38444d;
+    }
+
+    .mainContent {
+        margin: 5vh 0;
+    }
+
+    .textPosition {
+        border: 2px solid #04AA6D;
+        line-height: normal;
+        margin: 4vh 0;
+    }
+
+    .textPosition p {
+        margin: 0;
+    }
+    .photoflex{
+        display: flex;
+    }
+    .items2{
+        float: left;
+        width: 23%;
+    }
+    .items{
+        float:left;
+        width: 38.333333%;
+    }
+    .photoflex img{
+        height: 300px;
+    }
+
+    .code {
+        background-color: rgb(21, 32, 43);
+        padding: 1vh 2vw;
+        margin: 2vh 0;
+        font-family: Consolas,Menlo,"courier new",monospace;
+    }
+
+    .codeSnippet {
+        background-color: #38444d;
+        padding: 2vh 4vw;
+        border-radius: 0.5rem;
+        line-height: 0.7rem;
+    }
+
+    .codeSnippet h2 {
+        font-weight: normal;
+        padding-bottom: 2vh;
+    }
+
+    #cssproperty {
+        color: #c5a5c5;
+    }
+
+    #propertyValue {
+        color: #88c999;
+    }
+
+    .yellowstrip{
+        background-color: #FFF4A3;
+        margin-top: 24px;
+        margin-top: 24px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 16px 32px;
+    }
+    .yellowstrip a{
+        color: #111;
+    }
+    .yellowstrip a:hover{
+        color: #04AA6D;
+    }
+    .bwtable{
+        border: 1px solid #38444d;
+        margin: 20px 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        color: #ddd;
+    }
+    .bwtable tr{
+        text-align: left;
+        color: #ddd;
+    }
+    .bwtable th{
+        padding: 10px;
+    }
+    .bwtable a{
+        color: #ddd;
+        font-size: 17px;
+    }
+    .bwtable a:hover{
+        color: #04AA6D;
+    }
+
+    .even{
+        background-color: rgb(29, 42, 53);
+    }
+
+    .odd{
+        background-color: #38444d;
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">A1</a></li>
+            <li><a href="#">A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <a href="/index_HTML.html">HTML HOME</a>
+            <a href="/HTML_Introduction/htmlINTRO.html">HTML Introduction</a>
+            <a href="#">HTML Editors</a>
+            <a href="/html_basic/index.html">HTML Basic</a>
+            <a href="#">HTML Elements</a>
+            <a href="/HTML-attribute/index.html">HTML Attributes</a>
+            <a href="/html_heading/index.html">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a href="/HTML STYLES/HTML_STYLES.HTML">HTML Styles</a>
+            <a href="#">HTML Formatting</a>
+            <a href="#">HTML Quotations</a>
+            <a href="#">HTML Comments</a>
+            <a href="/Html_colors/index.html">HTML Colors</a>
+            <a href="/html_css/html_css.html">HTML CSS</a>
+            <a href="">HTML Links</a>
+            <a class="active" href="/HTML_Images/index.html">HTML Images</a>
+            <a href="/HTML_FAVICON/HTML_FAVICON/FAVICON/favicon.html">HTML Favicon</a>
+            <a href="/Html page title/html page title.html">HTML Page Title</a>
+            <a href="/HTML_tables/project_table.html">HTML Tables</a>
+            <a href="/html_hlist/hlists1.html">HTML Lists</a>
+            <a href="/html_blocks/index.html">HTML Block & Inline</a>
+            <a href="/html_classes/html_classes.html">HTML Classes</a>
+            <a href="/HTML_Id/Html_Id.html">HTML Id</a>
+            <a href="/Iframe1.html">HTML Iframes</a>
+            <a href="/HTML_JSCRIPT/index.html">HTML JavaScript</a>
+            <a href="/html_filepaths/file_path.html">HTML File Paths</a>
+            <a href="/HTML_head/index.html">HTML Head</a>
+            <a href="/HTML_Layout/index.html">HTML Layout</a>
+            <a href="/html_responsive/index.html">HTML Responsive</a>
+            <a href="/html_computercode/index.html">HTML Computercode</a>
+            <a href="/HTML Semantic Elements.html">HTML Semantics</a>
+            <a href="/STYLE_GUIDE/STYLE.html">HTML Style Guide</a>
+            <a href="/HTML_SYMBOLS/index.html">HTML Symbols</a>
+            <a href="#">HTML Emojis</a>
+            <a href="#">HTML Charset</a>
+            <a href="#">HTML URL Encode</a>
+            <a href="#">HTML vs. XHTML</a>
+        <br><br><br><br>
+    </div>
+    <!-- End of vertical Navigation Section -->
+    <!-- Content Section -->
+    <div class="position">
+        <div class="mainContent">
+            <div class="heading">
+                <h1 id="topHeading">HTML Images</h1>
+                <div class="buttonGroup">
+                    <button>&lt; Previous</button>
+                    <button> Next &gt; </button>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p class="subText">Images can improve the design and the appearance of a web page.</p>
+            </div>
+            <hr>
+            <div class="photoflex">
+                <div class="items">
+                    <img src="Photos/pic_trulli.jpg">
+                </div>
+                <div class="items2">
+                    <img src="Photos/img_girl.jpg">
+                </div>
+                <div class="items">
+                    <img src="Photos/img_chania.jpg">
+                </div>
+            </div>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="pic_trulli.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Italian Trulli"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small;">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_girl.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Girl in a jacket"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_chania.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Flowers in Chania"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">HTML Images Syntax</p>
+                <p class="subText">The HTML <span id="property"><<code>img</code>></span> tag is used to embed an image in a web page.</p>
+                <p class="subText">Images are not technically inserted into a web page; images are linked to web pages. The <span id="property"><<code>img</code>></span> tag creates a holding space for the referenced image.</p>
+                <p class="subText">The <span id="property"><<code>img</code>></span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+                <p class="subText">The <span id="property"><<code>img</code>></span> tag has two required attributes:</p>
+                <ul>
+                    <li><p class="subText">src- Specifies the path to the image</p></li>
+                    <li><p class="subText">alt - Specifies an alternate text for the image</p></li>
+                </ul>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Syntax</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><i id="propertyValue">="url"</i>&nbsp;<span id="cssproperty">alt</span><i id="propertyValue">="alternatetext"</i><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">The src Attribute</p>
+                <p class="subText">The required <span id="property">src</span> attribute specifies the path (URL) to the image.</p>
+                <p class="subText"><b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <span id="property">alt</span> text are shown if the browser cannot find the image.</p>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_chania.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Flowers in Chania"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">The alt Attribute</p>
+                <p class="subText">The required <span id="property">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+                <p class="subText">The value of the <span id="property">alt</span> attribute should describe the image:</p>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_chania.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Flowers in Chania"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <p class="subText">If a browser cannot find an image, it will display the value of the <span id="property">alt</span> attribute:</p>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="wrongname.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Flowers in Chania"</span><span id="propertyValue">></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <div class="yellowstrip">
+            <p style="background-color: #FFF4A3!important;color: #000;" class="subText"><b>Tips:</b> A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p>
+            </div>
+            <hr>
+            <div class="positionStatic">
+                <p id="heading">Image Size - Width and Height</p>
+                <p class="subText">You can use the <span id="property">style</span> attribute to specify the width and height of an image.</p>
+            </div>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_chania.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Flowers in Chania"</span><span id="cssproperty">style</span><span id="propertyValue">="</span><span id="cssproperty">width</span><span id="propertyValue">:500px;<span id="cssproperty">height</span>:600px"></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <p class="subText">Alternatively, you can use the <span id="property">width</span> and <span id="property">height</span> attribute:</p>
+            <br>
+            <div class="codeSnippet">
+                <h2>Example</h2>
+                <div class="code">
+                    <p></p>
+                    <span id="propertyValue"><</span>&nbsp;<span style="color: #ff9999;">img</span>&nbsp;<span id="cssproperty">src</span><span id="propertyValue">="img_girl.jpg"</span>&nbsp;<span id="cssproperty">alt</span><span id="propertyValue">="Girl in a jacket"</span><span id="cssproperty">width</span><span id="propertyValue">="500"</span><span id="cssproperty">height</span><span id="propertyValue">="600"></span>
+                    <p></p>
+                </div>
+                <div class="buttonGroup">
+                    <button style="font-size:small">Try it Yourself >></button>
+                </div>
+            </div>
+            <br>
+            <p class="subText">The <span id="property">width</span> and <span id="property">height</span> attribute always define the width and height of the image in pixels.</p>
+            <div class="yellowstrip">
+                <p style="background-color: #FFF4A3!important;color: #000;" class="subText"><b>Note:</b> Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads.</p>
+            </div>
+        <hr>
+        <div class="positionStatic">
+            <p id="heading">Common Image Formats</p>
+            <p>Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):</p>
+            <table class="bwtable">
+                <tbody>
+                    <tr class="even">
+                        <th> <b>Abbreviation</b></th>
+                        <th> <b>File Format</b></th>
+                        <th> <b>File Extension</b></th>
+                    </tr>
+                    <tr class="odd">
+                        <th>APNG</th>
+                        <th> Animated Portable Network Graphics</th>
+                        <th>.apng</th>
+                    </tr>
+                    <tr class="even">
+                        <th> GIF</th>
+                        <th> Graphics Interchange Format</th>
+                        <th> .gif</th>
+                    </tr>
+                    <tr class="odd">
+                        <th>ICO</th>
+                        <th> Microsoft Icon</th>
+                        <th> .ico, .cur</th>
+                    </tr>
+                    <tr class="even">
+                        <th> JPEG</th>
+                        <th> Joint Photographic Expert Group image	</th>
+                        <th> .jpg, .jpeg, .jfif, .pjpeg, .pjp</th>
+                    </tr>
+                    <tr class="odd">
+                        <th> PNG</th>
+                        <th> Portable Network Graphics</th>
+                        <th> <div class="png"></div></th>
+                    </tr>
+                    <tr class="even">
+                        <th> SVG</th>
+                        <th>Scalable Vector Graphics</th>
+                        <th> .svg</th>
+                    </tr>
+            </tbody>
+           </table>
+        </div>
+        <div class="positionProperty">
+            <p id="heading">Chapter Summary</p>
+            <ul class="subText">
+                <li>Use the HTML <span id="property"><<code>img</code>></span> element to define an image</li>
+                <li>Use the HTML <span id="property">src</span> attribute to define the URL of the image</li>
+                <li>Use the HTML <span id="property">alt</span> attribute to define an alternate text for an image, if it cannot be displayed</li>
+                <li>Use the HTML <span id="property">width</span> and <span id="property">height</span> attributes or the CSS <span id="property">width</span> and <span id="property">height</span> properties to define the size of the image</li>
+                <li>Use the CSS <span id="property">float</span> property to let the image float to the left or to the right</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="positionStatic">
+            <p id="heading">HTML Images Tags</p>
+            <table class="bwtable">
+                <tbody>
+                    <tr class="even">
+                        <th> Tag</th>
+                        <th> Description</th>
+                    </tr>
+                    <tr class="odd">
+                        <th><a href="#"><span><<code>img</code>></span></a></th>
+                        <th> Defines an image</th>
+                    </tr>
+                    <tr class="even">
+                        <th><a href="#"><span><<code>map</code>></span></a></th>
+                        <th> Defines an image map</th>
+                    </tr>
+                    <tr class="odd">
+                        <th><a href="#"><span><<code>area</code>></span> </a></th>
+                        <th> Defines a clickable area inside an image map</th>
+                    </tr>
+                    <tr class="even">
+                        <th><a href="#"><span><<code>picture</code>></span></a></th>
+                        <th> Defines a container for multiple image resources</th>
+                    </tr>
+            </tbody>
+           </table>
+        </div>
+        <br>
+        <div class="yellowstrip">
+        <p style="background-color: #FFF4A3!important;color: #000;" class="subText">For a complete list of all available HTML tags, visit our <a href="#">HTML Tag Reference</a>.</p>
+        </div>
+        <br><br><br>
+        <div class="buttonGroup">
+            <button>&lt; Previous</button>
+            <button style="background-color: #ddd;color: #000;">Login to Track Progress</button>
+            <button> Next &gt; </button>
+        </div>
+    </div>
+    <!-- Content Section Ends -->
+</body>
+
+</html>

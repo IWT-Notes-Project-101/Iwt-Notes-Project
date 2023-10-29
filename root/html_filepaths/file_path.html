@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML file Paths</title>
+    <link rel="stylesheet" href="/index_styles.css">
+</head>
+<body>
+    <nav class="topnav">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a class="active" href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#a1">A1</a></li>
+            <li><a href="#a2">A2</a></li>
+        </ul>
+    </nav>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2>HTML Tutorial</h2>
+        <a href="/index_HTML.html">HTML HOME</a>
+            <a href="/HTML_Introduction/htmlINTRO.html">HTML Introduction</a>
+            <a href="#">HTML Editors</a>
+            <a href="/html_basic/index.html">HTML Basic</a>
+            <a href="#">HTML Elements</a>
+            <a href="/HTML-attribute/index.html">HTML Attributes</a>
+            <a href="/html_heading/index.html">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a href="/HTML STYLES/HTML_STYLES.HTML">HTML Styles</a>
+            <a href="#">HTML Formatting</a>
+            <a href="#">HTML Quotations</a>
+            <a href="#">HTML Comments</a>
+            <a href="/Html_colors/index.html">HTML Colors</a>
+            <a href="/html_css/html_css.html">HTML CSS</a>
+            <a href="">HTML Links</a>
+            <a href="/HTML_Images/index.html">HTML Images</a>
+            <a href="/HTML_FAVICON/HTML_FAVICON/FAVICON/favicon.html">HTML Favicon</a>
+            <a href="/Html page title/html page title.html">HTML Page Title</a>
+            <a href="/HTML_tables/project_table.html">HTML Tables</a>
+            <a href="/html_hlist/hlists1.html">HTML Lists</a>
+            <a href="/html_blocks/index.html">HTML Block & Inline</a>
+            <a href="/html_classes/html_classes.html">HTML Classes</a>
+            <a href="/HTML_Id/Html_Id.html">HTML Id</a>
+            <a href="/Iframe1.html">HTML Iframes</a>
+            <a href="/HTML_JSCRIPT/index.html">HTML JavaScript</a>
+            <a class="active" href="/html_filepaths/file_path.html">HTML File Paths</a>
+            <a href="/HTML_head/index.html">HTML Head</a>
+            <a href="/HTML_Layout/index.html">HTML Layout</a>
+            <a href="/html_responsive/index.html">HTML Responsive</a>
+            <a href="/html_computercode/index.html">HTML Computercode</a>
+            <a href="/HTML Semantic Elements.html">HTML Semantics</a>
+            <a href="/STYLE_GUIDE/STYLE.html">HTML Style Guide</a>
+            <a href="/HTML_SYMBOLS/index.html">HTML Symbols</a>
+            <a href="#">HTML Emojis</a>
+            <a href="#">HTML Charset</a>
+            <a href="#">HTML URL Encode</a>
+            <a href="#">HTML vs. XHTML</a>
+        <br><br><br><br>
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section">
+        <!-- Do the changes in the main-section -->
+        <h1 style="color: aliceblue;">HTML File Paths</h1>
+        <div class="space">
+            <div class="box1">< Previous</div>
+            <div class="box1">Next ></div>
+        </div>
+        <hr>
+        <p style="font-size: medium;">A file path describes the location of a file in a web site's folder structure.</p>
+        <hr>
+        <h1 style="font-weight: normal;">File Path Examples</h1>
+        <table border="1">
+            <tr>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>< img src="picture.jpg" ></td>
+                <td>The "picture.jpg" file is located in the same folder as the current page</td>
+            </tr>
+            <tr>
+                <td>< img src="images/picture.jpg" ></td>
+                <td>The "picture.jpg" file is located in the images folder in the current folder</td>
+            </tr>
+            <tr>
+                <td>
+                    < img src="/images/picture.jpg" >	
+                </td>
+                <td>
+                    	The "picture.jpg" file is located in the images folder at the of the<br>current web
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    < img src="../picture.jpg" >
+                </td>
+                <td>
+                    The "picture.jpg" file is located in the folder one level up from the current folder
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h2 style="font-weight: normal;">HTML File Paths</h2>
+        <p>A file path describes the location of a file in a web site's folder structure.</p>
+        <p>File paths are used when linking to external files, like:</p>
+        <ul>
+            <li>Web pages</li>
+            <li>Images</li>
+            <li>Style sheets</li>
+            <li>JavaScript</li>
+        </ul>
+        <hr>
+        <h2 style="font-weight: normal;">Absolute File Paths</h2>
+        <p>An absolute file path is the full URL to a file:</p>
+        <div class="box2">
+            <h3 style="font-weight: normal;">Example</h3>
+            <div class="box3">
+            <span style="color: green;">< </span>
+            <span style="color: brown;">img</span>
+            <span style="color: red;">src</span>
+            <span style="color: green;">="/images/picture.jpg"</span>
+            <span style="color: violet;">alt</span>
+            <span style="color: green;">="Mountain"></span></div>
+             <div class="box1">Try it Yourself</div>
+        </div>
+        <p>In the following example, the file path points to a file in the images folder located in the current folder:</p>
+        <div class="box2">
+            <h3 style="font-weight: normal;">Example</h3>
+            <div class="box3">
+            <span style="color: green;">< </span>
+            <span style="color: brown;">img</span>
+            <span style="color: red;">src</span>
+            <span style="color: green;">="images/picture.jpg"</span>
+            <span style="color: violet;">alt</span>
+            <span style="color: green;">="Mountain"></span></div>
+             <div class="box1">Try it Yourself</div>
+        </div>
+        <p>In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:</p>
+        <div class="box2">
+            <h3 style="font-weight: normal;">Example</h3>
+            <div class="box3">
+            <span style="color: green;">< </span>
+            <span style="color: brown;">img</span>
+            <span style="color: red;">src</span>
+            <span style="color: green;">="../images/picture.jpg"</span>
+            <span style="color: violet;">alt</span>
+            <span style="color: green;">="Mountain"></span></div>
+             <div class="box1">Try it Yourself</div>
+        </div>
+        <h2>Best Pratice</h2>
+        <p>It is best practice to use relative file paths (if possible).</p>
+        <p>When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.</p>
+        <div class="space">
+            <div class="box1">< Previous</div>
+            <div class="box4">log in to track progress</div>
+            <div class="box1">Next ></div>
+        </div>
+    </div>
+    <!-- Content Section Ends -->
+</body>
+</html>

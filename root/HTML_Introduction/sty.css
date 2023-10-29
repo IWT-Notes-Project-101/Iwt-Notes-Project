@@ -1,0 +1,85 @@
+*{
+    margin:5px;
+}
+.topButtons{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+  }
+
+  h1{
+    font-size: 60px;
+  }
+
+  .topButtons button{
+    padding:10px;
+    color:white;
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+  }
+
+  .border-div {
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid #eae5e5; 
+    border-bottom: 2px solid #eae5e5; 
+    box-shadow: 0px 5px 5px rgba(230, 222, 222, 0.2); 
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+}
+
+.para-2{
+    border-bottom: 2px solid #eae5e5; 
+    box-shadow: 0px 5px 5px rgba(230, 222, 222, 0.2); 
+}
+.para-2 h2{
+    font-size: 38px;
+}
+.para-2 p,h2{
+    margin-bottom: 25px;
+}
+
+.w3-example {
+  background-color:  #e7e9eb; 
+  margin-bottom: 34px;
+}
+.w3-example button{
+  padding:10px;
+  color:white;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 3px;
+  font-weight: bolder;
+  
+}
+
+.w3-code {
+  margin:25px;
+  border-left: 4px solid #04aa6d; 
+  background-color: white;
+}
+.extra{
+  border-top: 2px solid #eae5e5; 
+}
+.extra h2{
+  margin-top:20px;
+}
+.w3-note{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, for horizontal centering */
+  height: 100%; /* Optional, set a height for the parent div */
+  background-color: #ffffcc;
+  margin-bottom: 18px;
+}
+.w3-note p{
+margin-top: 22px;
+}
+
+.w3-codespan{
+  color:red;
+  background-color: #e7e9eb;
+}

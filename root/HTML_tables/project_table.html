@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <style >
+        /* Add CSS styles for the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Add CSS styles for the hover effect */
+        tr:hover {
+            background-color: #44bc96;
+        }
+    </style>
+</head>
+<body>
+    <title>HTML Tables</title>
+<meta charset="utf-8">
+
+<h1>HTML <span class="color_h1">Tables</span></h1>
+<hr>
+<p class="intro">HTML tables allow web developers to arrange data into rows and 
+columns.</p>
+<hr>
+
+<h3>Example</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>COMPANY</th>
+            <th>MODEL</th>
+            <th>PRICE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Merccedes-Benz</td>
+            <td>G63 AMG///</td>
+            <td>3.3 Cr</td>
+        </tr>
+        <tr>
+            <td>BMW</td>
+            <td>M5 CS </td>
+            <td>1.74 Cr</td>
+        </tr>
+        <tr>
+            <td>Audi</td>
+            <td>RS 7 Sportback</td>
+            <td>2.23 Cr</td>
+        </tr>
+        <tr>
+            <td>Porsche</td>
+            <td>911 GT3 RS</td>
+            <td>3.5 Cr</td>
+        </tr>
+        <tr>
+            <td>Automobili Lamborghini</td>
+            <td>Urus Performante</td>
+            <td>4.22 Cr</td>
+        </tr>
+        <tr>
+            <td>Ferrari</td>
+            <td>Portofino</td>
+            <td>3.5 Cr</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h2>Define an HTML Table</h2>
+<p>A table in HTML consists of table cells inside rows and columns.</p>
+<div>
+  <h3>Example</h3>
+  <p>A simple HTML table:</p>
+</div>
+<div class="w3-code notranslate htmlHigh">
+&lt;table&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Company&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Contact&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Country&lt;/th&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Maria 
+  Anders&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Germany&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Centro 
+  comercial Moctezuma&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Francisco 
+  Chang&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Mexico&lt;/td&gt;<br>
+&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+</div>
+
+
+<hr>
+
+<h2>Table Cells</h2>
+<p>Each table cell is defined by a
+<code class="w3-codespan">&lt;td&gt;</code> and a <code class="w3-codespan">&lt;/td&gt;</code> tag.</p>
+
+<div class="w3-panel w3-note">
+<p><code class="w3-codespan">td</code> 
+stands for table data.</p>
+</div>
+
+<p>Everything between <code class="w3-codespan">&lt;td&gt;</code> and <code class="w3-codespan">&lt;/td&gt;</code> are the content of the table cell.</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&lt;/table&gt;
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> A table cell can contain 
+all sorts of HTML elements: text, images, lists, links, other tables, etc.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Table Rows</h2>
+<p>Each table row starts with a 
+<code class="w3-codespan">&lt;tr&gt;</code> and ends with a <code class="w3-codespan">&lt;/tr&gt;</code> tag.</p>
+
+<div class="w3-panel w3-note">
+<p><code class="w3-codespan">tr</code> 
+stands for table row.</p>
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;table&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&lt;/table&gt;
+</div>
+
+</div>
+
+<p>You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.</p>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> There are times when a row can have less or more cells than another. You will learn about that in a later chapter.</p>
+</div>
+
+<hr>
+
+<h2>Table Headers</h2>
+<p>Sometimes you want your cells to be table header cells. In those cases use the
+<code class="w3-codespan">&lt;th&gt;</code> tag instead of the
+<code class="w3-codespan">&lt;td&gt;</code> tag:</p>
+
+<div class="w3-panel w3-note">
+<p><code class="w3-codespan">th</code> 
+stands for table header.</p>
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+  <p>Let the first row be table header cells:</p>
+<div class="w3-code notranslate htmlHigh">
+&lt;table&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;th&gt;Person 1&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Person 2&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Person 
+  3&lt;/th&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Emil&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Tobias&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Linus&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;16&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;14&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;10&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&lt;/table&gt;
+</div>
+
+</div>
+
+<p>By default, the text in <code class="w3-codespan">&lt;th&gt;</code> elements 
+are bold and centered, but you can change that with CSS. </p>
+<hr>
+
+<h2>HTML Table Tags</h2>
+<table class="ws-table-all notranslate";>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;table&gt;</td>
+<td>Defines a table</td>
+</tr>
+<tr>
+<td>&lt;th&gt;</td>
+<td>Defines a header cell in a table</td>
+</tr>
+<tr>
+<td>&lt;tr&gt;</td>
+<td>Defines a row in a table</td>
+</tr>
+<tr>
+<td>&lt;td&gt;</td>
+<td>Defines a cell in a table</td>
+</tr>
+<tr>
+<td>&lt;caption&gt;</td>
+<td>Defines a table caption</td>
+</tr>
+<tr>
+<td>&lt;colgroup&gt;</td>
+<td>Specifies a group of one or more columns in a table for formatting</td>
+</tr>
+<tr>
+<td>&lt;col&gt;</td>
+<td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+</tr>
+<tr>
+<td>&lt;thead&gt;</td>
+<td>Groups the header content in a table</td>
+</tr>
+<tr>
+<td>&lt;tbody&gt;</td>
+<td>Groups the body content in a table</td>
+</tr>
+<tr>
+<td>&lt;tfoot&gt;</td>
+<td>Groups the footer content in a table</td>
+</tr>
+</table>
+
+
+</div>
+</body>
+</html>

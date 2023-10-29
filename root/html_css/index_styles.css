@@ -1,0 +1,149 @@
+.prev-button {
+    background-color:#0da860;
+    width: 10%;
+    height: 50px;
+    border-radius: 5%;
+    color: white;
+    font-size: 20px;
+    margin-right: 900px; 
+    margin-top:5% ;
+    margin-left: 3%;
+}
+.next-button {
+    background-color:#0da860;
+    width: 10%;
+    height: 50px;
+    border-radius: 5%;
+    color: white;
+    font-size: 20px;
+}
+.parent{
+    margin-left: 3%;
+}
+p {
+    font-size: 16px;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 20px;
+}
+.Boxe_style {
+    border: 7px solid crimson; /* Add a border to the .Boxe_style div */
+    padding: 10px; /* Add some padding to create space inside the border */
+    width: max-content; /* Set the width to fit the content */
+    margin: 0 auto; /* Center the content horizontally on the page */
+    margin-left: 3%;
+    position: relative; /* Add relative positioning to the container */
+    margin-top: 5%;
+}
+
+.color_border {
+    /* No border or padding in this div */
+    width: max-content; /* Set the width to fit the content */
+    margin: 0 auto; /* Center the content horizontally on the page */
+    position: relative; /* Add relative positioning to the container */
+}
+
+.blue-box {
+    background-color: rgba(0, 0, 255, 0.5); /* Set the background color to partially transparent blue */
+    height: 100px; /* Adjust the height as needed */
+    margin-top: -100px; /* Position it above the text */
+    position: absolute; /* Add absolute positioning */
+    width: 100%; /* Make it full width */
+}
+.green-box {
+    background-color: rgba(0, 128, 0, 0.5); /* Set the background color to partially transparent green */
+    height: 100px; /* Adjust the height as needed */
+    margin-top: -50px; /* Position it above the text */
+    position: absolute; /* Add absolute positioning */
+    width: 50%; /* Make it full width */
+    margin-left: 25%; /* Position it horizontally */
+}
+/*.content {
+    display: flex;
+}*/
+
+/*.w3-example {
+    flex: 1;
+    margin: 20px;
+}*/
+
+.box {
+    padding: 10px;
+    margin-top: 1%;
+    background-color: #0da860;
+}
+
+.w3-example {
+    background-color: grey;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.word {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    color: black;
+    margin-top: -1%;
+}
+
+.h1 {
+    color:black;
+}
+
+p {
+    color: black;
+}
+.tip{
+    border: 1px solid yellow;
+    height: 50px;
+    background-color: yellow;
+    width:100%;
+}
+/* Apply styles to the table with class "table" */
+.table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Make the table span the entire container */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    background-color: #f2f2f2; /* Gray background color for table headers */
+}
+
+.table th, .table td {
+    font-weight: normal; /* Reset font weight to normal for table cells */
+}
+.last-footer{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.last{
+    border:1px solid darkblue;
+    background-color:black;
+    height: 550px;
+    width: 100%;
+}
+a{
+    color: yellow;
+    text-decoration: underline;
+}
+.last-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
+

@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+</head>
+<style>
+    .button {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    .main-section {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: rgb(29, 42, 53);
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .side-nav {
+        top: 47px;
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(21, 32, 43);
+        list-style: none;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        color: #cbc8c3;
+        padding: 8px 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+
+    }
+
+    .side-nav a {
+        display: block;
+        text-decoration: none;
+        color: #cbc8c3;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 2px 1px 1px 16px;
+        font-size: 15px;
+    }
+
+    .side-nav a:hover:not(.active) {
+        background-color: rgba(240, 240, 235, 0.308);
+    }
+</style>
+
+<body>
+    <!-- Start of horizontal Navigation Section -->
+    <div class="horizontal-navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="../css/index.html">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">About A1</a></li>
+            <li><a href="../about2.html">About A2</a></li>
+        </ul>
+    </div>
+    <!-- End of horizontal Navigation Section -->
+
+    <!-- Start of vertical Navigation Section -->
+    <div class="side-nav">
+        <h2 style="color: white;">HTML Tutorial</h2>
+        <a href="/index_HTML.html">HTML HOME</a>
+            <a href="/HTML_Introduction/htmlINTRO.html">HTML Introduction</a>
+            <a href="#">HTML Editors</a>
+            <a href="/html_basic/index.html">HTML Basic</a>
+            <a href="#">HTML Elements</a>
+            <a href="/HTML-attribute/index.html">HTML Attributes</a>
+            <a href="/html_heading/index.html">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a href="/HTML STYLES/HTML_STYLES.HTML">HTML Styles</a>
+            <a href="#">HTML Formatting</a>
+            <a href="#">HTML Quotations</a>
+            <a href="#">HTML Comments</a>
+            <a href="/Html_colors/index.html">HTML Colors</a>
+            <a href="/html_css/html_css.html">HTML CSS</a>
+            <a href="">HTML Links</a>
+            <a href="/HTML_Images/index.html">HTML Images</a>
+            <a href="/HTML_FAVICON/HTML_FAVICON/FAVICON/favicon.html">HTML Favicon</a>
+            <a href="/Html page title/html page title.html">HTML Page Title</a>
+            <a href="/HTML_tables/project_table.html">HTML Tables</a>
+            <a href="/html_hlist/hlists1.html">HTML Lists</a>
+            <a href="/html_blocks/index.html">HTML Block & Inline</a>
+            <a href="/html_classes/html_classes.html">HTML Classes</a>
+            <a href="/HTML_Id/Html_Id.html">HTML Id</a>
+            <a href="/Iframe1.html">HTML Iframes</a>
+            <a href="/HTML_JSCRIPT/index.html">HTML JavaScript</a>
+            <a href="/html_filepaths/file_path.html">HTML File Paths</a>
+            <a href="/HTML_head/index.html">HTML Head</a>
+            <a href="/HTML_Layout/index.html">HTML Layout</a>
+            <a href="/html_responsive/index.html">HTML Responsive</a>
+            <a href="/html_computercode/index.html">HTML Computercode</a>
+            <a class="active" href="/HTML Semantic Elements.html">HTML Semantics</a>
+            <a href="/STYLE_GUIDE/STYLE.html">HTML Style Guide</a>
+            <a href="/HTML_SYMBOLS/index.html">HTML Symbols</a>
+            <a href="#">HTML Emojis</a>
+            <a href="#">HTML Charset</a>
+            <a href="#">HTML URL Encode</a>
+            <a href="#">HTML vs. XHTML</a>
+        <br><br><br><br>
+    </div>
+    <!-- End of vertical Navigation Section -->
+
+    <!-- Content Section -->
+    <div class="main-section">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: white;">HTML Semantic Elements</h1>
+        
+       <div class=".btn">
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html_computercode_elements.asp" >
+                <button class="button" type="button" style="color: white"> &#8592; Previous</button>
+            </a>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html5_syntax.asp" >
+                <button class="button" style="color: white;">Next &#8594;</button>
+            </a>
+            <hr>
+            <h3 style="color: white;">Semantic elements = elements with a meaning.</h3>
+            <hr>
+            <h1 style="color: white;">What are Semantic Elements?</h1>
+            <h3 style="color: white;">A semantic element clearly describes its meaning to both the browser and the developer.</h3>
+            <h3 style="color: white;">Examples of <strong>non-semantic</strong> elements: <code class="w3-codespan">&lt;div&gt;</code> and <code class="w3-codespan">&lt;span&gt;</code> - Tells nothing about its content.</h3>
+            <h3 style="color: white;">Examples of <strong>semantic</strong> elements: <code class="w3-codespan">&lt;form&gt;</code>, <code class="w3-codespan">&lt;table&gt;</code>, and <code class="w3-codespan">&lt;article&gt;</code> - Clearly defines its content.</h3>
+            <hr>
+            <h1 style="color: white;">Semantic Elements in HTML</h1>
+            <h3 style="color: white;">Many web sites contain HTML code like:&lt;div id=&quot;nav&quot;&gt; &lt;div class=&quot;header&quot;&gt; &lt;div id=&quot;footer&quot;&gt; to indicate navigation, header, and footer.</h3>
+            <h3 style="color: white;">In HTML there are some semantic elements that can be used to define different parts of a web page:&nbsp;</h3>
+            <table class="ws-table-all notranslate" style="color: whitesmoke;">
+                <tr>
+                    <td>
+                        <h3 style="color: white;">&lt;;article&gt;</h3>
+                        <h3 style="color: white;">&lt;aside&gt;</h3>
+                        <h3 style="color: white;">&lt;details&gt;</h3>
+                        <h3 style="color: white;">&lt;figcaption&gt;</h3>
+                        <h3 style="color: white;">&lt;figure&gt;</h3>
+                        <h3 style="color: white;">&lt;footer&gt;</h3>
+                        <h3 style="color: white;">&lt;header&gt;</h3>
+                        <h3 style="color: white;">&lt;main&gt;</h3>
+                        <h3 style="color: white;">&lt;mark&gt;</h3>
+                        <h3 style="color: white;">&lt;nav&gt;</h3>
+                        <h3 style="color: white;">&lt;section&gt;</h3>
+                        <h3 style="color: white;">&lt;summary&gt;</h3>
+                        <h3 style="color: white;">&lt;time&gt;</h3>
+                    </td>
+                    <td>
+                        <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="" style="height: 500px;float: left;width: 500px;">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <h1 style="color: white;">HTML &lt;section&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;section&gt;</code> element defines a section in a document.</h3>
+            <h3 style="color: white;">According to W3C's HTML documentation: &quot;A section is a thematic grouping of content, typically with a heading.&quot;</h3>
+            <h3 style="color: white;">Examples of where a <code class="w3-codespan">&lt;section&gt;</code> element can be used:</h3>
+            <h3 style="color: white;">&#9830;Chapters</h3>
+            <h3 style="color: white;">&#9830;Introduction</h3>
+            <h3 style="color: white;">&#9830;News items</h3>
+            <h3 style="color: white;">&#9830;Contact information</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">Two sections in a document:</h3>
+            <br>
+            <h3 style="color: white;">&lt;section&gt;<br>&lt;h1&gt;WWF&lt;/h1&gt;<br>&lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;<br>&lt;/section&gt;<br><br>&lt;section&gt;<br>&lt;h1&gt;WWF's Panda symbol&lt;/h1&gt;<br>&lt;p&gt;The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.&lt;/p&gt;<br>&lt;/section&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_section" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+            <hr>
+            <br>
+            <br>
+            <hr>
+            <h1 style="color: white;">HTML &lt;article&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;article&gt;</code> element specifies independent, self-contained content.</h3>
+            <h3 style="color: white;">An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</h3>
+            <h3 style="color: white;">Examples of where the <code class="w3-codespan">&lt;article&gt;</code> element can be used:</h3>
+            <h3 style="color: white;">&#9830;Forum posts</h3>
+            <h3 style="color: white;">&#9830;Blog posts</h3>
+            <h3 style="color: white;">&#9830;User comments</h3>
+            <h3 style="color: white;">&#9830;Product cards</h3>
+            <h3 style="color: white;">&#9830;Newspaper articles</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">Three articles with independent, self-contained content:</h3>
+            <h3 style="color: white;">&lt;article&gt;<br>&lt;h2&gt;Google Chrome&lt;/h2&gt;<br>&lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;<br>&lt;/article&gt;<br><br>&lt;article&gt;<br>&lt;h2&gt;Mozilla Firefox&lt;/h2&gt;<br>&lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;<br>&lt;/article&gt;<br><br>&lt;article&gt;<br>&lt;h2&gt;Microsoft Edge&lt;/h2&gt;<br>&lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;<br>&lt;/article&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+                <br><br>
+                <hr>
+                <br>
+            <h2 style="color: white;">Example 2</h2>
+            <h3 style="color: white;">Use CSS to style the &lt;aside&gt; element:</h3>
+            <h3 style="color: white;">&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>aside {<br>&nbsp; width: 30%;<br>&nbsp; padding-left: 15px;<br>&nbsp; margin-left: 15px;<br>&nbsp; float: right;<br>&nbsp; font-style: italic;<br>&nbsp; background-color: lightgray;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br><br>&lt;aside&gt;<br>&lt;p&gt;The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;<br>&lt;/aside&gt;<br><br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article2" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+                <br><br>
+                <hr>
+                <br>
+            <h1 style="color: white;">Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;article&gt;</code> element specifies independent, self-contained content.</h3>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;section&gt;</code> element defines section in a document.</h3>
+            <h3 style="color: white;">Can we use the definitions to decide how to nest those elements? No, we cannot!<</h3>
+            <h3 style="color: white;">So, you will find HTML pages with <code class="w3-codespan">&lt;section&gt;</code> elements containing <code class="w3-codespan">&lt;article&gt;</code> elements, and <code class="w3-codespan">&lt;article&gt;</code> elements containing <code class="w3-codespan">&lt;section&gt;</code> elements.</h3>
+            <h1 style="color: white;">HTML &lt;header&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;header&gt;</code> element represents a container for introductory content or  a set of navigational links.</h3>
+            <h3 style="color: white;">A <code class="w3-codespan">&lt;header&gt;</code> element typically contains:</h3>
+            <h3 style="color: white;">&#9830;one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</h3>
+            <h3 style="color: white;">&#9830;logo or icon</h3>
+            <h3 style="color: white;">&#9830;authorship information</h3>
+            <h3 style="color: white;"><strong style="color: orange;">Note:</strong> You can have several <code class="w3-codespan">&lt;header&gt;</code> elements in one HTML document. However, <code class="w3-codespan">&lt;header&gt;</code> cannot be placed within a <code class="w3-codespan">&lt;footer&gt;</code>, <code class="w3-codespan">&lt;address&gt;</code> or another <code class="w3-codespan">&lt;header&gt;</code> element.</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">A header for an &lt;article&gt;:&nbsp;</h3>
+            <h3 style="color: white;">&lt;article&gt;<br>&nbsp; &lt;header&gt;<br>&nbsp;&nbsp;&nbsp;&lt;h1&gt;What Does WWF Do?&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;WWF's mission:&lt;/p&gt;<br>&nbsp; &lt;/header&gt;<br>&nbsp; &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.&lt;/p&gt;<br>&lt;/article&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_header" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+                <br><br>
+                <hr>
+                <br>
+            <h1 style="color: white;">HTML &lt;footer&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;footer&gt;</code> element defines a footer for a document or section.</h3>
+            <h3 style="color: white;">A <code class="w3-codespan">&lt;footer&gt;</code> element typically contains:</h3>
+            <h3 style="color: white;">&#9830;authorship information</h3>
+            <h3 style="color: white;">&#9830;copyright information</h3>
+            <h3 style="color: white;">&#9830;contact information</h3>
+            <h3 style="color: white;">&#9830;sitemap</h3>
+            <h3 style="color: white;">&#9830;back to top links</h3>
+            <h3 style="color: white;">&#9830;related documents</h3>
+            <h3 style="color: white;">&#9830;You can have several <code class="w3-codespan">&lt;footer&gt;</code> elements in one document.</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">A footer section in a document:</h3>
+            <h3 style="color: white;">&lt;footer&gt;<br>&nbsp; &lt;p&gt;Author: Hege Refsnes&lt;/p&gt;<br>&nbsp; &lt;p&gt;&lt;a href=&quot;mailto:hege@example.com&quot;&gt;hege@example.com&lt;/a&gt;&lt;/p&gt;<br>&lt;/footer&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_footer" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <h1 style="color: white;">HTML &lt;nav&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;nav&gt;</code> element defines a set of navigation links.</h3>
+            <h3 style="color: rgb(255, 183, 0);">Notice that NOT all links of a document should be inside a <code class="w3-codespan">&lt;nav&gt;</code> element. The <code class="w3-codespan">&lt;nav&gt;</code> element is intended only for major blocks of navigation links. </p><p>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">A set of navigation links:</h3>
+            <h3 style="color: white;">&lt;nav&gt;<br>&nbsp;&lt;a href=&quot;/html/&quot;&gt;HTML&lt;/a&gt; |<br>&nbsp;&lt;a href=&quot;/css/&quot;&gt;CSS&lt;/a&gt; |<br>&nbsp;&lt;a href=&quot;/js/&quot;&gt;JavaScript&lt;/a&gt; |<br>&nbsp;&lt;a href=&quot;/jquery/&quot;&gt;jQuery&lt;/a&gt;<br>&lt;/nav&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_nav" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+            <br><br>
+            <hr>
+            <br>
+            <h1 style="color: white;">HTML &lt;aside&gt; Element</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;aside&gt;</code> element defines some content aside from the content it is placed in (like a sidebar).</h3>           
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;aside&gt;</code> content should be indirectly related to the surrounding content.</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">Display some content aside from the content it is placed in:</h3>
+            <h3 style="color: white;">&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br><br>&lt;aside&gt;<br>&lt;h4&gt;Epcot Center&lt;/h4&gt;<br>&lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;<br>&lt;/aside&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+            <h2 style="color: white;">Example 2</h2>
+            <h3 style="color: white;">Use CSS to style the &lt;aside&gt; element:</h3>
+            <h3 style="color: white;">&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>aside {<br>&nbsp; width: 30%;<br>&nbsp; padding-left: 15px;<br>&nbsp; margin-left: 15px;<br>&nbsp; float: right;<br>&nbsp; font-style: italic;<br>&nbsp; background-color: lightgray;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br><br>&lt;aside&gt;<br>&lt;p&gt;The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;<br>&lt;/aside&gt;<br><br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br>&lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside2" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+                <br><br>
+                <hr>
+                <br>
+            <h1 style="color: white;">HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h1>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;figure&gt;</code> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</h3>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;figcaption&gt;</code> tag defines a caption for a <code class="w3-codespan">&lt;figure&gt;</code> element. The <code class="w3-codespan">&lt;figcaption&gt;</code> element can be placed as the first or as the last child of a <code class="w3-codespan">&lt;figure&gt;</code> element.</h3>
+            <h3 style="color: white;">The <code class="w3-codespan">&lt;img&gt;</code> element defines the actual image/illustration.&nbsp;</h3>
+            <h2 style="color: white;">Example</h2>
+            <h3 style="color: white;">&lt;figure&gt;<br>&nbsp; &lt;img src=&quot;pic_trulli.jpg&quot; alt=&quot;Trulli&quot;&gt;<br>&nbsp; &lt;figcaption&gt;Fig1. - Trulli, Puglia, Italy.&lt;/figcaption&gt;<br>&lt;/figure&gt;</h3>
+            <a class="w3-left w3-btn" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_aside2" >
+                <button class="button" type="button" style="color: white">TRY IT YOURSELF&gt;&gt;</button></a>
+                <br><br>
+                <hr>
+                <br>
+            <h1 style="color: white;">Why Semantic Elements?</h1>
+            <h3 style="color: white;">According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."</h3>
+            <h1 style="color: white;">Semantic Elements in HTML</h1>
+            <h3 style="color: white;">Below is a list of some of the semantic elements in HTML.</h3>
+            <h3 style="color: white;"></h3>
+            <table class="ws-table-all notranslate" style="color: whitesmoke;">
+                <tr>
+                <th style="width:20%">Tag</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td>&lt;article&gt;</td>
+                <td>Defines independent, self-contained content</td>
+                </tr>
+                <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Defines content aside from the page content</td>
+                </tr>
+                <tr>
+                <td>&lt;details&gt;</td>
+                <td>Defines additional details that the user can view or hide</td>
+                </tr>
+                <tr>
+                <td>&lt;figcaption&gt;</td>
+                <td>Defines a caption for a &lt;figure&gt; element</td>
+                </tr>
+                <tr>
+                <td>&lt;figure&gt;</td>
+                <td>Specifies self-contained content, like illustrations, diagrams, photos, code 
+                listings, etc.</td>
+                </tr>
+                <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Defines a footer for a document or section</td>
+                </tr>
+                <tr>
+                <td>&lt;header&gt;</td>
+                <td>Specifies a header for a document or section</td>
+                </tr>
+                <tr>
+                <td>&lt;main&gt;</td>
+                <td>Specifies the main content of a document</td>
+                </tr>
+                <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Defines marked/highlighted text</td>
+                </tr>
+                <tr>
+                <td>&lt;nav&gt;</td>
+                <td>Defines navigation links</td>
+                </tr>
+                <tr>
+                <td>&lt;section&gt;</td>
+                <td>Defines a section in a document</td>
+                </tr>
+                <tr>
+                <td>&lt;summary&gt;</td>
+                <td>Defines a visible heading for a &lt;details&gt; element</td>
+                </tr>
+                <tr>
+                <td>&lt;time&gt;</td>
+                <td>Defines a date/time</td>
+                </tr>
+                </table>
+                <br><br>
+
+                <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html_computercode_elements.asp" >
+                    <button class="button" type="button" style="color: white"> &#8592; Previous</button>
+                </a>
+                <a class="w3-left w3-btn" href="https://www.w3schools.com/html/html5_syntax.asp" >
+                    <button class="button" style="color: white;">Next &#8594;</button>
+                </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>NAME:JAYASHREE SAHU</h2>
+            <br>
+            <h2>SIC:-22BCTL31</h2>
+            <br>
+            <h2>ROLL:-36</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>    <!-- Content Section Ends -->
+</body>
+
+</html>

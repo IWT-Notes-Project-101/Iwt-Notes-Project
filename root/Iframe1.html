@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3school</title>
+    <style>
+        .head{
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-weight: 400;
+            
+        }
+        .box{
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #0da860;;
+            color: white;
+            padding: 8px;
+            border: none;
+           
+        }
+        .box1{
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #0da860;
+            color: white;
+            padding: 10px;
+            float: right;      
+            border: none; 
+            margin: 5px ;
+        }
+        .p{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .w3-example {
+            background-color: #E7E9EB;
+            border-radius: 5px;
+            padding: 0.01em 16px 20px;
+            margin: 20px 0;
+            box-shadow: 0 0px 0px 0 #00000029,0 0px 0px 0 #0000001f!important;
+        }
+        .word{
+            word-spacing: 5px;
+            box-sizing: content-box;
+            background-color: white;
+            margin-top:5px;
+            margin-bottom: 10px;
+            padding: 10px ;
+            border-left:4px solid #0da860;
+        }
+        .horizontal-navbar{
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        
+        }
+        
+        .horizontal-navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .horizontal-navbar a:hover{
+            background: #ddd;
+            color: black;
+        }
+        .side-nav {
+            top: 46px;
+            position: fixed;
+            width: 15%;
+            height: 100%;
+            overflow: auto;
+            background-color: #15202b;
+            list-style: none;
+        }
+        .side-nav a {
+            display: block;
+            text-decoration: none;
+            color: #cbc8c3;
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 2px 1px 1px 16px;
+            font-size: 15px;
+        }
+        
+        .side-nav a:hover:not(.active) {
+            background-color: rgba(240, 240, 235, 0.308);
+        }
+        h2 {
+            margin: 10px 0px;
+            color: #cbc8c3;
+            padding: 8px 16px;
+            font-weight: 400;
+            font-family: "Segoe UI", Arial, sans-serif;
+        
+        }
+        .main-section {
+            padding:20px;
+            margin:30px;
+            background-color: white;
+            height: 100%;
+            margin-left: 15%;
+            margin-right: 12%;
+            color:black;
+            
+        }
+        .h1{
+            font-size: 30px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="horizontal-navbar">      
+        <a class="active" href="#HTML">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="#">SQL</a>
+        <a href="#">PYTHON</a>
+        <a href="#">JAVA</a>
+        <a href="#">PHP</a>
+        <a href="#">W3.CSS</a>
+        <a href="#">C</a>
+        <a href="#">C++</a>
+        <a href="#">C#</a>
+        <a href="#">BOOTSTRAP</a>
+        <a href="#">REACT</a>
+        <a href="#">MYSQL</a>
+        <a href="#">&gt;</a>
+                
+    </div>
+
+    <div class="side-nav">
+        <h2>HTML Tutorial</h2>
+        <a href="/index_HTML.html">HTML HOME</a>
+            <a href="/HTML_Introduction/htmlINTRO.html">HTML Introduction</a>
+            <a href="#">HTML Editors</a>
+            <a href="/html_basic/index.html">HTML Basic</a>
+            <a href="#">HTML Elements</a>
+            <a href="/HTML-attribute/index.html">HTML Attributes</a>
+            <a href="/html_heading/index.html">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a href="/HTML STYLES/HTML_STYLES.HTML">HTML Styles</a>
+            <a href="#">HTML Formatting</a>
+            <a href="#">HTML Quotations</a>
+            <a href="#">HTML Comments</a>
+            <a href="/Html_colors/index.html">HTML Colors</a>
+            <a href="/html_css/html_css.html">HTML CSS</a>
+            <a href="">HTML Links</a>
+            <a href="/HTML_Images/index.html">HTML Images</a>
+            <a href="/HTML_FAVICON/HTML_FAVICON/FAVICON/favicon.html">HTML Favicon</a>
+            <a href="/Html page title/html page title.html">HTML Page Title</a>
+            <a href="/HTML_tables/project_table.html">HTML Tables</a>
+            <a href="/html_hlist/hlists1.html">HTML Lists</a>
+            <a href="/html_blocks/index.html">HTML Block & Inline</a>
+            <a href="/html_classes/html_classes.html">HTML Classes</a>
+            <a href="/HTML_Id/Html_Id.html">HTML Id</a>
+            <a class="active" href="/Iframe1.html">HTML Iframes</a>
+            <a href="/HTML_JSCRIPT/index.html">HTML JavaScript</a>
+            <a href="/html_filepaths/file_path.html">HTML File Paths</a>
+            <a href="/HTML_head/index.html">HTML Head</a>
+            <a href="/HTML_Layout/index.html">HTML Layout</a>
+            <a href="/html_responsive/index.html">HTML Responsive</a>
+            <a href="/html_computercode/index.html">HTML Computercode</a>
+            <a href="/HTML Semantic Elements.html">HTML Semantics</a>
+            <a href="/STYLE_GUIDE/STYLE.html">HTML Style Guide</a>
+            <a href="/HTML_SYMBOLS/index.html">HTML Symbols</a>
+            <a href="#">HTML Emojis</a>
+            <a href="#">HTML Charset</a>
+            <a href="#">HTML URL Encode</a>
+            <a href="#">HTML vs. XHTML</a>
+        <br><br><br><br>
+    </div>
+
+    <div class="main-section">
+        <h1 class="head">HTML <span>Iframes</span></h1>
+            <button class="box">❮ Previous</button>
+            <button class="box1">Next ❯</button>
+            <hr style="opacity: 20%;">
+            <p class="p">An HTML iframe is used to display a web page within a web page.</p>
+            <hr style="opacity: 20%;">
+            <h1 class="h1">HTML Iframe Syntax</h1>
+            <p style="font-size: 18px;">The HTML <span style="color: red ;font-size:18px;">‹iframe›</span> tag specifies an inline frame.</p>
+            <p style="font-size: 18px; font-weight :500;">An inline frame is used to embed another document within the current HTML document.</p>
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Syntax</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style: italic; color:blue">"url"</span></span>
+                <span style="color: red;font-size:18px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">title=</span><span style="font-style: italic;color:blue">"description"><</span>
+                <span style="color:brown ">/iframe &gt;</span></div>
+            </div>
+            <p><strong>Tip:</strong><span style="font-family:Arial, Helvetica, sans-serif"> It is a good practice to always include a <span style="color: red;">title</span> attribute for the <span style="color: red;">&lt;iframe&gt;</span>. This is used by screen readers to read out what the content of the iframe is.</span></p>
+            <hr style="opacity: 20%;">
+            <h1 class="h1">Iframe - Set Height and Width</h1>
+            <p style="font-size: 18px;">Use the <span style="color: red ;font-size:18px;">height</span> and <span style="color: red ;font-size:18px;">width</span> attributes to specify the size of the iframe.</p>
+            <p style="font-size: 18px; font-weight :500;">The height and width are specified in pixels by default:</p>
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Example</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style:normal; color:blue">"demo_iframe.htm"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">height=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"200"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">width=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"200"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">title=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"Iframe Example"><
+                
+                <span style="color:brown ">/iframe &gt;</span></span></div>
+                <button class="box">Try it yourself»</button>
+            </div>
+            <p style="font-size: 18px;">Or you can add the <span style="color: red ;font-size:18px;">style</span> attribute and use the CSS  <span style="color: red ;font-size:18px;">height</span> and <span style="color: red ;font-size:18px;">width</span> properties.</p>
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Example</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style:normal; color:blue">"demo_iframe.htm"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">style=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"height:200px;width:300px;"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">title=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"Iframe Example">
+                
+                <span style="color:brown ">&lt;/iframe &gt;</span></span></div>
+                <button class="box">Try it yourself»</button>
+            </div>
+            <!---->
+            <hr style="opacity: 20%;">
+            <h1 class="h1">Iframe - Remove the Border</h1>
+            <p style="font-size: 18px; font-weight :500;">By default, an iframe has a border around it.</p>
+            <p style="font-size: 18px;">To remove the border, add the  <span style="color: red ;font-size:18px;">style</span> attribute and use the CSS <span style="color: red ;font-size:18px;">border</span> a property:</p>
+            
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Example</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style:normal; color:blue">"demo_iframe.htm"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">style=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"border:none"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">title=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"Iframe Example"></span>
+               <br>
+                <span style="color:brown ">&lt;/iframe &gt;</span></span></div>
+                <button class="box">Try it yourself»</button>
+            </div>
+            <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Example</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style:normal; color:blue">"demo_iframe.htm"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">style=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"border:2px solid red;"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">title=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"Iframe Example">
+                <br>
+                <span style="color:brown ">&lt;/iframe &gt;</span></span></div>
+                <button class="box">Try it yourself»</button>
+            </div>
+            <!---->
+
+            <hr style="opacity: 20%;">
+            <h1 class="h1">Iframe - Target for a Link</h1>
+            <p style="font-size: 18px; font-weight :500;">An iframe can be used as the target frame for a link.</p>
+            <p style="font-size: 18px;">The <span style="color: red ;font-size:18px;"> target </span>attribute of the link must refer to the  <span style="color: red ;font-size:18px;"> name </span> attribute of the iframe:</p>
+            
+            <div class="w3-example">
+                <h3 style="font-size: 25px; font-weight:200;">Example</h3>
+                <div class="word">&lt;<span style="color: brown;">iframe</span> <span style="color: red; ">src=<span style="font-style:normal; color:blue">"demo_iframe.htm"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">name=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"iframe_a"</span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">title=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"Iframe Example"></span>
+               <br>
+               
+                <span style="color:brown ">&lt;/iframe &gt;</span></span><br>
+                <span style="color:brown ">&lt;p &gt;</span></span>
+               
+                &lt;<span style="color: brown;">a</span> <span style="color: red; ">href=<span style="font-style:normal; color:blue">"https://www.w3schools.com"</span></span>
+                <span style="color: red;font-size:18px;font-family:monospace; font-size:16px">target=</span><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:blue">"iframe_a"&gt;</span>
+                W3Schools.com
+                <span style="color:brown ">&lt;/a &gt;</span></span>
+                <span style="color:brown ">&lt;/p &gt;</span></span>
+            </div>
+                <button class="box">Try it yourself»</button>
+            </div>
+            <h1 class="h1">Chapter Summary</h1>
+            <ul>
+                <li>The HTML <span style="color: red;">&lt;iframe&gt;</span>tag specifies an inline frame</li>
+                <li>The <span style="color: red;">src</span>attribute defines the URL of the page to embed</li>
+                <li>The <span style="color: red;">src</span>attribute defines the URL of the page to embed</li>
+                <li>Always include a<span style="color: red;">title</span> attribute (for screen readers)</li>   
+                <li>The <span style="color: red;">height</span> and <span style="color: red;">width</span>attributes specify the size of the iframe</li>
+                <li>Use<span style="color: red;">border:none;</span> to remove the border around the iframe</li>  
+            </ul>
+    </div>
+        </body>
+</html>

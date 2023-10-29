@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.main-section {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgb(29, 42, 53);
+    margin-left: 15%;
+    height: 600vh;
+    padding-right:10px;
+
+
+}
+
+.side-nav {
+    top: 46px;
+    position: fixed; /*To keep side nav bar at one position  */
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(21, 32, 43);
+    list-style: none;
+}
+
+
+h2 {
+    margin: 10px 0px;
+    color: #cbc8c3;
+    padding: 8px 16px;
+    font-family: "Segoe UI", Arial, sans-serif  !important;; 
+
+}
+
+.side-nav a {
+    display: block;
+    text-decoration: none;
+    color: #cbc8c3;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 2px 1px 1px 16px;
+    font-size: 15px;
+}
+
+.side-nav a:hover:not(.active) {
+    background-color: rgba(240, 240, 235, 0.308);
+}
+
+/* NEW CODE */
+.col-sm-10
+{
+    border: 1px solid #ede3e3;
+    border-width: 0px 2px 0px 0px;
+    margin-right:200px;
+    height: 435vh;
+    color: #cccccc;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+button
+{
+    padding: 12px 19px;  /* Adjust padding to increase button size */
+    border-radius: 15px;  /* Adds rounded corners to the button */
+    background-color: #04aa6d;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border:none;
+    color:white;
+    font-size:medium;
+    
+}
+button:hover {
+    background-color: #03955f;
+}
+.code-class {
+    color: #ff9999;
+    background-color: rgba(222,222,222,0.1);
+}
+
+.eg-1{
+    background-color:#dedede1a;
+    height:270px;
+    width:98%;
+    position:static;
+}
+.code-1{
+    background-color: rgb(29, 42, 53);
+    height:198px;
+    width:95%;
+    margin-left: 20px;
+}
+.eg-2{
+    background-color:#dedede1a;
+    height:53px;
+    width:98%;
+    padding-left: 5px;
+    padding-top: 20px;
+    position:static;
+}
+.code-2
+{
+    background-color: rgb(29, 42, 53);
+    height:33px;
+    width:95%;
+    padding-left:15px;
+}
+.eg-3
+{
+    background-color:#dedede1a;
+    height:200px;
+    width:98%;
+    position:static;
+    padding-left: 5px;
+}
+.code-3{
+    background-color: rgb(29, 42, 53);
+    height:70px;
+    width:95%;
+    padding-left:15px;
+}
+.eg-4
+{
+    background-color:#dedede1a;
+    height:200px;
+    width:98%;
+    position:static;
+    padding-left: 10px;
+}
+.code-4
+{
+    background-color: rgb(29, 42, 53);
+    height:55px;
+    width:95%;
+    padding-left:15px;
+
+}
+.eg-5
+{
+    background-color:#dedede1a;
+    height:175px;
+    width:98%;
+    padding-left: 10px;
+    position:static;
+}
+.code-5
+{
+    background-color: rgb(29, 42, 53);
+    height:30px;
+    width:95%;
+    padding-left:15px;
+}
+.eg-6
+{
+    background-color:#dedede1a;
+    height:175px;
+    width:98%;
+    padding-left:10px;
+    position:static;
+}
+.code-6
+{
+    background-color: rgb(29, 42, 53);
+    height:30px;
+    width:95%;
+    padding-left:15px;
+
+}
+p
+{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:16px;
+}
+.eg
+{
+    border-radius: 5px;
+}
+
+.codee{
+    border-radius: 5px;
+    padding-left:10px;
+}

@@ -1,0 +1,132 @@
+.previous{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.next{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    float: right;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.previous:hover {
+    background-color: green;
+    color: white;
+}
+.next:hover{
+    background-color: green;
+    color: white;
+}
+.example{
+  background-color: silver;
+  width: 750px;
+  height: 370px;
+  padding: 8px;
+  margin: 0px;
+  
+}
+.inner{
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    height: 200px;
+    
+}
+.innertext{
+    float: left;
+    top: 0px;
+    width: 300px;
+    padding: 10px;
+}
+.olist{
+    float: right;
+    top: 0px;
+    width: 300px;
+    padding: 10px;
+    
+}
+.Tryit{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.Tryit:hover {
+    background-color: green;
+    color: white;
+}
+.Example1{
+  background-color: silver;
+  width: 750px;
+  height: 310px;
+  padding: 8px;
+  margin: 0px;
+}
+.innertext1{
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    height: 150px;
+}
+.Example2{
+    background-color: silver;
+    width: 750px;
+    height: 320px;
+    padding: 8px;
+    margin: 0px;
+  }
+.innertext2{
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    height: 150px;
+  }
+.Example3{
+    background-color: silver;
+    width: 750px;
+    height: 320px;
+    padding: 8px;
+    margin: 0px;
+  }
+  .innertext3{
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    height: 150px;
+  }
+.table {
+    border: 0px 0px solid;
+  }
+th, td {
+    border: 0px solid;
+    width: 300px;;
+    text-align:left;
+  }
+#coloring tr:nth-child(even){
+    background-color: #f2f2f2;
+    width: auto;
+}

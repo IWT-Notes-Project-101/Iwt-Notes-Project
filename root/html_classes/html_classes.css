@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.main-section {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgb(29, 42, 53);
+    height: 100vh;
+    margin-left: 15%;
+}
+
+.side-nav {
+    top: 46px;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(21, 32, 43);
+    list-style: none;
+    position: fixed;
+}
+
+h2 {
+    margin: 10px 0px;
+    color: #cbc8c3;
+    padding: 8px 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+.side-nav a {
+    display: block;
+    text-decoration: none;
+    color: #cbc8c3;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 2px 1px 1px 16px;
+    font-size: 15px;
+}
+
+.side-nav a:hover:not(.active) {
+    background-color: rgba(240, 240, 235, 0.308);
+}
+.buttonclass{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;   
+}
+.btn{
+   background-color: #04AA6D;
+   width: 100px;
+   height: 50px;
+   border: none;
+   border-radius: 6px;
+   font-size: 17px;
+   color: whitesmoke;
+   font-style: bold;
+}
+hr{
+    color: aqua;
+}
+.main-section{
+    background-color: white;
+    width: 80%;
+}
+.define{
+ font-size: 22px;
+ font-style: italic;
+ font-weight: 200;
+}
+.table1{
+    background-color: #cbc8c3;
+    border: 2px solid #cbc8c3;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 6px;
+}
+.table2{
+    padding:5px;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+.table1 h1{
+    margin-left: 25px;
+}
+.tips{
+    font-size: 20px;
+    padding: 10px;
+    border-color: yellow;
+    background-color: rgba(255, 255, 0, 0.357);
+}
+.bttn{
+    margin: 2% 0% 2% 0%;
+    border: none;
+    border-radius: 6px;
+}
+.list_1{
+    background-color: transparent;
+    position:relative;
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    
+}
+.list_1 li{
+    list-style-type: disc;
+    margin-left: 25px;
+}

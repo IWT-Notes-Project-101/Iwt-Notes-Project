@@ -1,0 +1,81 @@
+.padding{
+padding-top: 50px;
+}
+button {
+    background: #04AA6D;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: white;
+}
+button:hover{
+    background-color:#108359;
+}
+.nextprev{
+    display: flex;
+    justify-content:space-between;
+}
+.intro{
+    background-color: #193d3d;
+    padding-top: 2%;
+  padding-bottom: 2%;
+padding-left: 2%;
+}
+.example {
+    background-color: #38444d;
+    padding: 2vh 2vw;
+    border-radius: 0.4rem;
+    line-height: 1.2rem;
+}
+.example-code{
+    background-color: rgb(21, 32, 43);
+    padding: 2vh 2vw;
+    
+}
+.html-examples{
+    background-color:#38444d ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+}
+.html-examples:hover{
+background-color: rgb(3, 20, 36);
+}
+.exercise{
+    background-color: #38444d;
+    padding: 2vh 2vw;
+    padding-bottom: 30px;
+    border-radius: 0.4rem;
+    line-height: 1.2rem;
+}
+.exercise-code{
+    padding-left:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(21, 32, 43);
+}
+.exerciseprecontainer{
+    background-color: #38444d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 95%;
+    }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: 100%;
+    background-color: #38444d;
+}
+.btn:hover{
+    background-color: rgb(21, 32, 43);;
+}
